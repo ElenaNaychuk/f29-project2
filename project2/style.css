@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Cormorant Infant', serif;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
