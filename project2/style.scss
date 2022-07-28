@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Cormorant Infant', serif;
+}
+
+p, a {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+   // Общие стили для всех кнопок
+.button {          
+    height: 9.5vh;
+    background: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 9vh;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+}
+                    // Блок 2 Welcome
