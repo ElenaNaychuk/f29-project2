@@ -26,6 +26,30 @@
     text-decoration: none;
     letter-spacing: 0.2px;
   }
+  .pre-title {
+    display: inline-block;
+    border-top: 1px solid #E1B168;
+    border-bottom: 1px solid #E1B168;
+    padding-top: 5px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #292E36;
+  }
+  h4 {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: #292E36;
+  }
   .welcome-block {
     width: 100%;
     height: 100%;
@@ -87,5 +111,116 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .dishes {
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    text-align: center;
+  }
+  .dishes_pre-title {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 2px;
+  }
+  .dishes__title {
+    margin-top: 12px;
+    text-align: center;
+  }
+  .dishes__text {
+    padding-top: 8px;
+    text-align: center;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cards__card-burger {
+    display: grid;
+    grid-template-columns: 47% 53%;
+    grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
+    background: url(/f29-project2/project2/assets/images/burger-background-blue.png);
+    height: 409px;
+    width: 47vw;
+    padding-left: 1.8vw;
+  }
+  .cards__card-burger_price {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: 68px;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.2px;
+    color: #292E36;
+  }
+  .cards__card-burger_pre-title {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .cards__card-burger_title {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 35px;
+  }
+  .cards__card-burger_text {
+    grid-column: 1/3;
+    grid-row: 5/7;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+    padding-bottom: 40px;
+  }
+  .cards__card-burger_photo {
+    grid-column: 2/3;
+    grid-row: 2/6;
+    padding-right: 2vw;
+    padding-top: 3.5vh;
+    width: 100%;
+    height: 100%;
+  }
+  .cards__card-pizza {
+    display: grid;
+    grid-template-columns: 46% 54%;
+    grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
+    background: url(/f29-project2/project2/assets/images/pizza-background-gray.png);
+    height: 400px;
+    width: 47vw;
+    padding-left: 2vw;
+  }
+  .cards__card-pizza_price {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin-top: 68px;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+  .cards__card-pizza_pre-title {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .cards__card-pizza_title {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 35px;
+  }
+  .cards__card-pizza_text {
+    grid-column: 1/2;
+    grid-row: 5/7;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #555555;
+    padding-bottom: 40px;
+  }
+  .cards__card-pizza_photo {
+    grid-column: 2/3;
+    grid-row: 2/6;
+    padding-right: 2vw;
+    width: 100%;
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
