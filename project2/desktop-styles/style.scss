@@ -1,108 +1,259 @@
-@media (min-width: 1024px) and (max-width: 1440px) {
-    
-    body {
-        max-width: 1440px;
-        margin: 0 auto;
+    // Переменные для основных цветов
+
+    $primary-color: #292E36;
+    $accent-color: #E1B168;
+    $light-color: #FFFFFF;
+
+    @media (min-width: 1024px) {
+
+        body {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        p,
+        a {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        input,
+        fieldset {
+            all: unset;
+        }
+
+        button {
+            border: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        // Общие стили для всех кнопок
+
+        .button {
+            height: 9, 5vh;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 9vh;
+            text-align: center;
+            text-decoration: none;
+            letter-spacing: 0.2px;
+        }
+
+        // Блок 2 Welcome
+
+        .welcome-block {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto auto auto 1fr;
+            padding-left: 3vw;
+            background: #292E36;
+
+            &__title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 90px;
+                line-height: 100px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+            }
+
+            &__text {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                padding-top: 3vh;
+                padding-right: 5vw;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+            }
+
+            &__btn_transparent {
+                grid-column: 1/2;
+                background: none;
+                grid-row: 4/5;
+                width: 230px;
+                margin-top: 3vh;
+                border: 2px solid #E1B168;
+                color: #E1B168;
+            }
+
+            &__image {
+                width: 100%;
+                background: #292E36;
+                grid-column: 2/3;
+                grid-row: 1/6;
+                border-left: 2vw solid rgba(255, 255, 255, 0.1);
+                border-top: 4vh solid rgba(255, 255, 255, 0.1);
+                border-right: 2vw solid rgba(255, 255, 255, 0.1);
+                position: relative;
+
+                &_main {
+                    width: 90%;
+                    height: 100%;
+                    padding-top: 5%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &_svg {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
     }
 
-    * {
-        margin: 0;
-        padding: 0;
+    // Блок 7, FORM
+
+    .form {
+        max-width: 100%;
+        background-image: url('../assets/images/form_image.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &__wrapper {
+            padding: 140px 40px;
+            min-width: 64%;
+        }
+
+        &__overlay {
+            margin: 0 220px;
+            background-color: rgba(41, 46, 54, 0.95);
+        }
+
+        &__pre-title {
+            padding-top: 140px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        &__container {
+            display: block;
+            margin: 0 auto;
+
+            max-width: 70%;
+        }
+
+        &__small-title {
+            text-align: center;
+
+            color: $light-color;
+        }
+
+        &__form {
+            padding: 40px 0 120px;
+            max-width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+            grid-auto-flow: row;
+            gap: 30px;
+        }
+
+        &__item_name {
+            grid-column: 1/4;
+        }
+
+        &__item_email {
+            grid-column: 4/7;
+        }
+
+        &__item_persons {
+            grid-column: 1/3;
+        }
+
+        &__item_time {
+            grid-column: 3/5;
+        }
+
+        &__item_date {
+            grid-column: 5/7;
+        }
+
+        &__item_button {
+            grid-column: 2/6;
+            justify-self: center;
+        }
+
+        &__item {
+            min-height: 70px;
+            padding: 0 25px;
+
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5vw;
+            line-height: 2vw;
+
+            background-color: transparent;
+            color: $light-color;
+            border: 1px solid #858585;
+        }
+
+        &__item::placeholder {
+            color: $light-color;
+        }
+
+        &__item_label {
+            display: flex;
+            align-items: center;
+        }
+
+
+        &__button {
+            min-width: 253px;
+            max-height: fit-content;
+            padding: 20px 45px;
+
+            align-self: center;
+
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2rem;
+
+            background-color: $light-color;
+            cursor: pointer;
+        }
     }
 
-    * {
-        box-sizing: border-box;
-    }
+    .pre-title {}
 
-    h1 {
+    .small-title {
         font-family: 'Cormorant Infant', serif;
-    }
-
-    p, a {
-        font-family: 'Josefin Sans', sans-serif;
-    }
-
-    // Общие стили для всех кнопок
-
-    .button {          
-        height: 9,5vh;
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
-        line-height: 9vh;
-        text-align: center;
-        text-decoration: none;
-        letter-spacing: 0.2px;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.02rem;
     }
-    
-                        // Блок 2 Welcome
 
-    .welcome-block {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto auto auto 1fr;
-        padding-left: 3vw;
-        background: #292E36;
-
-        &__title {
-            grid-column: 1/2;
-            grid-row: 2/3;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 90px;
-            line-height: 100px;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }    
-
-        &__text {
-            grid-column: 1/2;
-            grid-row: 3/4;
-            padding-top: 3vh;
-            padding-right: 5vw;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 30px;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }
-
-        &__btn_transparent {
-            grid-column: 1/2;
-            background: none;
-            grid-row: 4/5;
-            width: 230px;
-            margin-top: 3vh;
-            border: 2px solid #E1B168;
-            color: #E1B168;
-        }
-
-        &__image {
-            width: 100%;
-            background: #292E36;
-            grid-column: 2/3;
-            grid-row: 1/6;
-            border-left: 2vw solid rgba(255, 255, 255, 0.1);
-            border-top: 4vh solid rgba(255, 255, 255, 0.1);
-            border-right: 2vw solid rgba(255, 255, 255, 0.1);
-            position: relative;
-
-            &_main {
-                width: 90%;
-                height: 100%;
-                padding-top: 5%;
-                display: block;
-                margin: 0 auto;
-            }
-
-            &_svg {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-        }
-    }  
-}
+    .button {}
