@@ -158,4 +158,28 @@
                 }
             }
         }
+
+
+    
+    // Блок 7, FORM
+
+    .form {
+
+        &__wrapper {
+            padding: 40px 40px;
+        }
+
+        &__overlay {
+            margin: 0;
+        }
+
+        &__pre-title {
+            color: $light-color;
+        }
+
+        &__item {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
     }
+}

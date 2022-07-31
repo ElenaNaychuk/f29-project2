@@ -141,4 +141,17 @@
     width: 270px;
     height: 270px;
   }
+  .form__wrapper {
+    padding: 40px 40px;
+  }
+  .form__overlay {
+    margin: 0;
+  }
+  .form__pre-title {
+    color: #FFFFFF;
+  }
+  .form__item {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
