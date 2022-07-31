@@ -1,3 +1,8 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media (min-width: 1024px) {
   body {
     max-width: 1440px;
@@ -23,6 +28,9 @@
     all: unset;
   }
   button {
+    border: none;
+  }
+  button:focus {
     border: none;
   }
   .hidden {
@@ -436,21 +444,25 @@
 
 .form__item::-webkit-input-placeholder {
   text-align: start;
+  font-family: 'Josefin Sans';
   color: #FFFFFF;
 }
 
 .form__item:-ms-input-placeholder {
   text-align: start;
+  font-family: 'Josefin Sans';
   color: #FFFFFF;
 }
 
 .form__item::-ms-input-placeholder {
   text-align: start;
+  font-family: 'Josefin Sans';
   color: #FFFFFF;
 }
 
 .form__item::placeholder {
   text-align: start;
+  font-family: 'Josefin Sans';
   color: #FFFFFF;
 }
 
@@ -461,6 +473,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.form__item:hover, .form__item_label:hover {
+  border: 1px solid #E1B168;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.form__item:focus, .form__item_label:focus {
+  border: 1px solid #E1B168;
 }
 
 .form__button {
@@ -478,5 +500,18 @@
   font-size: 1.5rem;
   line-height: 2rem;
   background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
   cursor: pointer;
+}
+
+.form__button:focus {
+  border: 2px solid #E1B168;
+  background-color: #E1B168;
+  color: #FFFFFF;
+}
+
+.form__button:hover {
+  border: 2px solid #E1B168;
+  background-color: transparent;
+  color: #E1B168;
 }

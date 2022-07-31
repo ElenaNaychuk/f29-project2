@@ -4,6 +4,10 @@
     $accent-color: #E1B168;
     $light-color: #FFFFFF;
 
+    * {
+        box-sizing: border-box;
+    }
+
     @media (min-width: 1024px) {
 
         body {
@@ -39,6 +43,10 @@
         // Общие стили для тега кнопка 
 
         button {
+            border: none;
+        }
+
+        button:focus {
             border: none;
         }
 
@@ -397,6 +405,9 @@
 
         &__item::placeholder {
             text-align: start;
+
+            font-family: 'Josefin Sans';
+            
             color: $light-color;
         }
 
@@ -405,6 +416,16 @@
             align-items: center;
         }
 
+        &__item:hover,
+        &__item_label:hover {
+            border: 1px solid $accent-color;
+            transition: 0.3s ease-in-out;
+        }
+
+        &__item:focus,
+        &__item_label:focus {
+            border: 1px solid $accent-color;
+        }
 
         &__button {
             min-width: 253px;
@@ -420,6 +441,19 @@
             line-height: 2rem;
 
             background-color: $light-color;
+            border: 2px solid $light-color;
             cursor: pointer;
+        }
+
+        &__button:focus {
+            border: 2px solid $accent-color;
+            background-color: $accent-color;
+            color: $light-color;
+        }
+
+        &__button:hover {
+            border: 2px solid $accent-color;
+            background-color: transparent;
+            color: $accent-color;
         }
     }
