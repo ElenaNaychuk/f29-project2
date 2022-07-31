@@ -34,6 +34,8 @@
             all: unset;
         }
 
+        // Общие стили для тега кнопка 
+
         button {
             border: none;
         }
@@ -56,6 +58,16 @@
             text-align: center;
             text-decoration: none;
             letter-spacing: 0.2px;
+        }
+
+        // Общие стили для подзаголовков
+
+        .small-title {
+            font-family: 'Cormorant Infant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 56px;
         }
 
         // Блок 2 Welcome
@@ -130,6 +142,249 @@
         }
     }
 
+    p,
+    a {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    // Общие стили для текста
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+
+    // Общие стили для всех кнопок
+
+    .button {
+        height: 9, 5vh;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        letter-spacing: 0.02rem;
+    }
+
+    // Oбщие стили для всех предзаголовков <h5> с бордером сверху и снизу 
+
+    .pre-title {
+        display: inline-block;
+        border-top: 1px solid #E1B168;
+        border-bottom: 1px solid #E1B168;
+        padding-top: 5px;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #292E36;
+    }
+
+    // Общие стили для h4
+    h4 {
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: #292E36;
+    }
+
+
+    // Блок 2 Welcome
+
+    .welcome-block {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto 1fr;
+        padding-left: 3vw;
+        background: #292E36;
+
+        &__title {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 90px;
+            line-height: 100px;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+        }
+
+        &__text {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            color: #FFFFFF;
+        }
+
+        &__btn_transparent {
+            grid-column: 1/2;
+            background: none;
+            grid-row: 4/5;
+            width: 230px;
+            margin-top: 3vh;
+            border: 2px solid #E1B168;
+            color: #E1B168;
+        }
+
+        &__image {
+            width: 100%;
+            background: #292E36;
+            grid-column: 2/3;
+            grid-row: 1/6;
+            border-left: 2vw solid rgba(255, 255, 255, 0.1);
+            border-top: 4vh solid rgba(255, 255, 255, 0.1);
+            border-right: 2vw solid rgba(255, 255, 255, 0.1);
+            position: relative;
+
+            &_main {
+                width: 90%;
+                height: 100%;
+                padding-top: 5%;
+                display: block;
+                margin: 0 auto;
+            }
+
+            &_svg {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .dishes {
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        text-align: center;
+
+        &_pre-title {
+            display: inline-flex;
+            justify-content: center;
+            padding-left: 2px;
+        }
+
+        &__title {
+            margin-top: 12px;
+            text-align: center;
+        }
+
+        &__text {
+            padding-top: 8px;
+            text-align: center;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+
+        &__card-burger {
+            display: grid;
+            grid-template-columns: 47% 53%;
+            grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
+            background: url(/f29-project2/project2/assets/images/burger-background-blue.png);
+            height: 400px;
+            width: 47vw;
+            padding-left: 1.8vw;
+
+            &_price {
+                grid-column: 1/2;
+                grid-row: 1/3;
+                margin-top: 68px;
+                font-size: 60px;
+                letter-spacing: 0.2px;
+                color: #292E36;
+            }
+
+            &_pre-title {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                font-size: 35px;
+            }
+
+            &_text {
+                grid-column: 1/2;
+                grid-row: 5/7;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #555555;
+                padding-bottom: 40px;
+            }
+
+            &_photo {
+                grid-column: 2/3;
+                grid-row: 2/6;
+                padding-right: 2vw;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__card-pizza {
+            display: grid;
+            grid-template-columns: 46% 54%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 25px 1fr 1fr 1fr;
+            background: url(/f29-project2/project2/assets/images/pizza-background-gray.png);
+            height: 400px;
+            width: 47vw;
+            padding-left: 1.8vw;
+
+            &_price {
+                grid-column: 1/2;
+                grid-row: 2/4;
+                margin-top: 68px;
+                font-size: 60px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+            }
+
+            &_pre-title {
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 5/6;
+                font-size: 35px;
+            }
+
+            &_text {
+                grid-column: 1/2;
+                grid-row: 6/8;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #555555;
+                padding-bottom: 40px;
+            }
+
+            &_photo {
+                grid-column: 2/3;
+                grid-row: 2/6;
+                padding-right: 2vw;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
     // Блок 7, FORM
 
     .form {
@@ -146,12 +401,13 @@
         &__overlay {
             margin: 0 220px;
             background-color: rgba(41, 46, 54, 0.95);
+            text-align: center;
         }
 
         &__pre-title {
-            padding-top: 140px;
-            padding-bottom: 20px;
-            text-align: center;
+            margin: 140px auto 20px;
+
+            color: $light-color;
         }
 
         &__container {
@@ -218,6 +474,7 @@
         }
 
         &__item::placeholder {
+            text-align: start;
             color: $light-color;
         }
 
@@ -244,16 +501,3 @@
             cursor: pointer;
         }
     }
-
-    .pre-title {}
-
-    .small-title {
-        font-family: 'Cormorant Infant', serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-        letter-spacing: 0.02rem;
-    }
-
-    .button {}

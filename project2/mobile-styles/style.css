@@ -4,16 +4,17 @@
     padding: 0;
   }
   * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   h1 {
-    font-family: "Cormorant Infant", serif;
+    font-family: 'Cormorant Infant', serif;
   }
   p, a {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
   }
   .button {
-    height: 9, 5vh;
+    height: 9,5vh;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -25,14 +26,21 @@
   .welcome-block {
     width: 100%;
     height: 100%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5vh auto auto auto 5vh auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 5vh auto auto auto 5vh auto;
+        grid-template-rows: 5vh auto auto auto 5vh auto;
     background: #292E36;
     text-align: center;
   }
   .welcome-block__title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     font-style: normal;
     font-weight: 400;
@@ -44,7 +52,11 @@
     padding-right: 5vw;
   }
   .welcome-block__text {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
     grid-row: 3/4;
     padding-top: 5vh;
     padding-left: 5vw;
@@ -57,8 +69,12 @@
     color: #FFFFFF;
   }
   .welcome-block__btn_transparent {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     background: none;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
     grid-row: 4/5;
     width: 230px;
     margin-top: 3vh;
@@ -70,7 +86,11 @@
     position: relative;
     width: 100%;
     background: #292E36;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
     grid-row: 6/7;
     border-left: 4vw solid rgba(255, 255, 255, 0.1);
     border-top: 2vh solid rgba(255, 255, 255, 0.1);
@@ -90,4 +110,4 @@
     width: 200px;
     height: 200px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
