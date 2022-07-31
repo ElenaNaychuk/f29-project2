@@ -4,25 +4,16 @@ $primary-color: #292E36;
 $accent-color: #E1B168;
 $light-color: #FFFFFF;
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 @media (max-width: 767.98px) {
-
-    // * {
-    //     margin: 0;
-    //     padding: 0;
-    // }
-
-    // * {
-    //     box-sizing: border-box;
-    // }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
 
     h1 {
         font-family: 'Cormorant Infant', serif;
