@@ -1,105 +1,185 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+    // Переменные для основных цветов
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
+    $primary-color: #292E36;
+    $accent-color: #E1B168;
+    $light-color: #FFFFFF;
 
-    * {
-        box-sizing: border-box;
-    }
+    @media (min-width: 768px) and (max-width: 1023.98px) {
 
-    h1 {
-        font-family: 'Cormorant Infant', serif;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-    p, a {
-        font-family: 'Josefin Sans', sans-serif;
-    }
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Cormorant Infant', serif;
+        }
+
+        p,
+        a {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        // Стили для тегов form 
+
+        input,
+        fieldset {
+            all: unset;
+        }
+
+        // Общие стили для тега кнопка 
+
+        button {
+            border: none;
+        }
+
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
 
         // Общие стили для всех кнопок
 
-    .button {          
-        height: 9,5vh;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 9vh;
-        text-align: center;
-        text-decoration: none;
-        letter-spacing: 0.2px;
-    }
-
-                                // Блок 2 Welcome
-
-    .welcome-block {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto auto auto 1fr;
-        padding-left: 3vw;
-        background: #292E36;
-
-        &__title {
-            grid-column: 1/2;
-            grid-row: 2/3;
+        .button {
+            padding: 20px 45px;
             font-style: normal;
-            font-weight: 300;
-            font-size: 60px;
-            line-height: 80px;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            // line-height: 9vh; Мне кажется лучше не использовать зависимость от высоты у кнопок, предлагаю отталкиваться от высоты шрифта и добавлять padding для размера кнопок
+            text-align: center;
+            text-decoration: none;
             letter-spacing: 0.2px;
-            color: #FFFFFF;
-        }    
-
-        &__text {
-            grid-column: 1/2;
-            grid-row: 3/4;
-            padding-top: 3vh;
-            padding-right: 5vw;
-            font-style: normal;
-            font-weight: 300;
-            font-size: 17px;
-            line-height: 25px;
-            letter-spacing: 0.2px;
-            color: #FFFFFF;
         }
 
-        &__btn_transparent {
-            grid-column: 1/2;
-            background: none;
-            grid-row: 4/5;
-            width: 230px;
-            margin-top: 3vh;
-            border: 2px solid #E1B168;
-            color: #E1B168;
+
+        // Общие стили для подзаголовков
+
+        .small-title {
+            font-family: 'Cormorant Infant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 56px;
         }
 
-        &__image {
+        // Oбщие стили для всех предзаголовков <h5> с бордером сверху и снизу 
+
+        .pre-title {
+            display: inline-block;
+            border-top: 1px solid #E1B168;
+            border-bottom: 1px solid #E1B168;
+            padding-top: 5px;
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #292E36;
+        }
+
+        // Блок 2 Welcome
+
+        .welcome-block {
             width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr auto auto auto 1fr;
+            padding-left: 3vw;
             background: #292E36;
-            grid-column: 2/3;
-            grid-row: 1/6;
-            border-left: 2vw solid rgba(255, 255, 255, 0.1);
-            border-top: 4vh solid rgba(255, 255, 255, 0.1);
-            border-right: 2vw solid rgba(255, 255, 255, 0.1);
-            position: relative;
 
-            &_main {
-                width: 90%;
-                height: 100%;
-                padding-top: 5%;
-                display: block;
-                margin: 0 auto;
+            &__title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 60px;
+                line-height: 80px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
             }
 
-            &_svg {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 270px;
-                height: 270px;
+            &__text {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                padding-top: 3vh;
+                padding-right: 5vw;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 17px;
+                line-height: 25px;
+                letter-spacing: 0.2px;
+                color: #FFFFFF;
+            }
+
+            &__btn_transparent {
+                grid-column: 1/2;
+                background: none;
+                grid-row: 4/5;
+                width: 230px;
+                margin-top: 3vh;
+                border: 2px solid #E1B168;
+                color: #E1B168;
+            }
+
+            &__image {
+                width: 100%;
+                background: #292E36;
+                grid-column: 2/3;
+                grid-row: 1/6;
+                border-left: 2vw solid rgba(255, 255, 255, 0.1);
+                border-top: 4vh solid rgba(255, 255, 255, 0.1);
+                border-right: 2vw solid rgba(255, 255, 255, 0.1);
+                position: relative;
+
+                &_main {
+                    width: 90%;
+                    height: 100%;
+                    padding-top: 5%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &_svg {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 270px;
+                    height: 270px;
+                }
             }
         }
-    }  
+
+
+    
+    // Блок 7, FORM
+
+    .form {
+
+        &__wrapper {
+            padding: 40px 40px;
+        }
+
+        &__overlay {
+            margin: 0;
+        }
+
+        &__pre-title {
+            color: $light-color;
+        }
+
+        &__item {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
 }

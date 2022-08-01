@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023.98px) {
   * {
     margin: 0;
     padding: 0;
@@ -9,18 +9,53 @@
   h1 {
     font-family: "Cormorant Infant", serif;
   }
-  p, a {
+  p,
+a {
     font-family: "Josefin Sans", sans-serif;
   }
+  input,
+fieldset {
+    all: unset;
+  }
+  button {
+    border: none;
+  }
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
   .button {
-    height: 9, 5vh;
+    padding: 20px 45px;
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 9vh;
+    font-size: 1.5rem;
+    line-height: 2rem;
     text-align: center;
     text-decoration: none;
     letter-spacing: 0.2px;
+  }
+  .small-title {
+    font-family: "Cormorant Infant";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .pre-title {
+    display: inline-block;
+    border-top: 1px solid #E1B168;
+    border-bottom: 1px solid #E1B168;
+    padding-top: 5px;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #292E36;
   }
   .welcome-block {
     width: 100%;
@@ -85,5 +120,18 @@
     right: 0;
     width: 270px;
     height: 270px;
+  }
+  .form__wrapper {
+    padding: 40px 40px;
+  }
+  .form__overlay {
+    margin: 0;
+  }
+  .form__pre-title {
+    color: #FFFFFF;
+  }
+  .form__item {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
