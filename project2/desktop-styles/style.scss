@@ -28,6 +28,15 @@
             font-family: 'Cormorant Infant', serif;
         }
 
+        h6 {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+        }
+
         p,
         a {
             font-family: 'Josefin Sans', sans-serif;
@@ -68,7 +77,6 @@
 
         .button {
             padding: 20px 45px;
-
             font-family: 'Josefin Sans', sans-serif;
             font-style: normal;
             font-weight: 400;
@@ -110,8 +118,8 @@
 
         .pre-title {
             display: inline-block;
-            border-top: 1px solid #E1B168;
-            border-bottom: 1px solid #E1B168;
+            border-top: 1px solid $accent-color;
+            border-bottom: 1px solid $accent-color;
             padding-top: 5px;
             font-family: 'Josefin Sans';
             font-style: normal;
@@ -120,7 +128,7 @@
             line-height: 22px;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: #292E36;
+            color: $primary-color;
         }
 
         // Общие стили для h4
@@ -132,7 +140,11 @@
             line-height: 56px;
             letter-spacing: 0.2px;
             text-transform: capitalize;
-            color: #292E36;
+            color: $primary-color;
+        }
+
+        .title-black {
+            font-weight: 700;
         }
 
         // Блок 2 Welcome
@@ -144,7 +156,7 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr auto auto auto 1fr;
             padding-left: 3vw;
-            background: #292E36;
+            background: $primary-color;
 
             &__title {
                 grid-column: 1/2;
@@ -176,13 +188,13 @@
                 grid-row: 4/5;
                 width: 230px;
                 margin-top: 3vh;
-                border: 2px solid #E1B168;
-                color: #E1B168;
+                border: 2px solid $accent-color;
+                color: $accent-color;
             }
 
             &__image {
                 width: 100%;
-                background: #292E36;
+                background: $primary-color;
                 grid-column: 2/3;
                 grid-row: 1/6;
                 border-left: 2vw solid rgba(255, 255, 255, 0.1);
@@ -237,7 +249,7 @@
             display: grid;
             grid-template-columns: 47% 53%;
             grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
-            background: url(/f29-project2/project2/assets/images/burger-background-blue.png);
+            background: url(/project2/assets/images/burger-background-blue.png);
             height: 400px;
             width: 47vw;
             padding-left: 1.8vw;
@@ -254,15 +266,15 @@
                 margin-top: 8vh;
                 font-size: 60px;
                 letter-spacing: 0.2px;
-                color: #292E36;
+                color: $primary-color;
                 margin-left: 2.5vw;
             }
 
             &_pre-title {
                 grid-column: 1/2;
                 grid-row: 3/4;               
-                border-top: 1px solid #292E36;
-                border-bottom: 1px solid #292E36;
+                border-top: 1px solid $primary-color;
+                border-bottom: 1px solid $primary-color;
             }
 
             &_title {
@@ -295,7 +307,7 @@
             display: grid;
             grid-template-columns: 46% 54%;
             grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr ;
-            background: url(/f29-project2/project2/assets/images/pizza-background-gray.png);
+            background: url(/project2/assets/images/pizza-background-gray.png);
             height: 400px;
             width: 47vw;
             padding-left: 1.5vw;
@@ -319,8 +331,8 @@
             &_pre-title {
                 grid-column: 1/2;
                 grid-row: 3/4;
-                border-top: 1px solid #292E36;
-                border-bottom: 1px solid #292E36;
+                border-top: 1px solid $primary-color;
+                border-bottom: 1px solid $primary-color;
             }
 
             &_title {
@@ -347,6 +359,57 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+
+    .dishes-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 29px;
+        width: 100%;
+        padding: 0 40px;
+
+        &__card {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 63px auto;
+            
+            &_image {
+                grid-row: 1/2;
+                object-fit: contain;
+                width: 100%;
+                color: $primary-color;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                border-bottom: 1px solid  #DCDCDC;
+                padding-top: 9px;
+                align-self: center;
+            }
+
+            &_title-right {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                text-align: right;
+                padding-top: 9px;
+                align-self: center;
+            }
+
+            &_text {
+                grid-row: 3/4;
+            }
+        }
+
+        &__btn_transparent {
+            display: block;
+            width: 255px;
+            border: 2px solid $accent-color;
+            color: $accent-color;
+            margin: 12vh auto 20vh;
         }
     }
 
