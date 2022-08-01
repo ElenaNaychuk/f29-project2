@@ -199,7 +199,7 @@ li {
   display: grid;
   grid-template-columns: 47% 53%;
   grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
-  background: url(/project2/assets/images/burger-background-blue.png);
+  background: url("../assets/images/burger-background-blue.png");
   height: 400px;
   width: 47vw;
   padding-left: 1.8vw;
@@ -250,7 +250,7 @@ li {
   display: grid;
   grid-template-columns: 46% 54%;
   grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
-  background: url(/project2/assets/images/pizza-background-gray.png);
+  background: url("../assets/images/pizza-background-gray.png");
   height: 400px;
   width: 47vw;
   padding-left: 1.5vw;
@@ -479,10 +479,14 @@ li {
   align-items: center;
 }
 .footer__tag {
+  align-self: end;
   color: #FFFFFF;
 }
 .footer__logo {
   max-width: 100%;
+}
+.footer__container-icons {
+  align-self: end;
 }
 .footer__icons {
   display: flex;
