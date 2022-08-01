@@ -4,18 +4,17 @@
     padding: 0;
   }
   * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
   h1 {
-    font-family: 'Cormorant Infant', serif;
+    font-family: "Cormorant Infant", serif;
   }
   p,
-  a {
-    font-family: 'Josefin Sans', sans-serif;
+a {
+    font-family: "Josefin Sans", sans-serif;
   }
   input,
-  fieldset {
+fieldset {
     all: unset;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -49,7 +48,7 @@
     letter-spacing: 0.2px;
   }
   .small-title {
-    font-family: 'Cormorant Infant';
+    font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -68,7 +67,7 @@
     border-top: 1px solid #E1B168;
     border-bottom: 1px solid #E1B168;
     padding-top: 5px;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -80,21 +79,14 @@
   .welcome-block {
     width: 100%;
     height: 100%;
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr auto auto auto 1fr;
-        grid-template-rows: 1fr auto auto auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto auto auto 1fr;
     padding-left: 3vw;
     background: #292E36;
   }
   .welcome-block__title {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
     grid-row: 2/3;
     font-style: normal;
     font-weight: 300;
@@ -104,11 +96,7 @@
     color: #FFFFFF;
   }
   .welcome-block__text {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
     grid-row: 3/4;
     padding-top: 3vh;
     padding-right: 5vw;
@@ -120,12 +108,8 @@
     color: #FFFFFF;
   }
   .welcome-block__btn_transparent {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     grid-column: 1/2;
     background: none;
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
     grid-row: 4/5;
     width: 230px;
     margin-top: 3vh;
@@ -135,11 +119,7 @@
   .welcome-block__image {
     width: 100%;
     background: #292E36;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-column: 2/3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 5;
     grid-row: 1/6;
     border-left: 2vw solid rgba(255, 255, 255, 0.1);
     border-top: 4vh solid rgba(255, 255, 255, 0.1);
@@ -207,3 +187,4 @@
             order: 3;
   }
 }
+}/*# sourceMappingURL=style.css.map */
