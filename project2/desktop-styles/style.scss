@@ -237,7 +237,7 @@
             display: grid;
             grid-template-columns: 47% 53%;
             grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
-            background: url(/f29-project2/project2/assets/images/burger-background-blue.png);
+            background: url("../assets/images/burger-background-blue.png");
             height: 400px;
             width: 47vw;
             padding-left: 1.8vw;
@@ -295,7 +295,7 @@
             display: grid;
             grid-template-columns: 46% 54%;
             grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr ;
-            background: url(/f29-project2/project2/assets/images/pizza-background-gray.png);
+            background: url("../assets/images/pizza-background-gray.png");
             height: 400px;
             width: 47vw;
             padding-left: 1.5vw;
@@ -513,11 +513,16 @@
         }
 
         &__tag {
+            align-self: end;
             color: $light-color;
         }
 
         &__logo {
             max-width: 100%;
+        }
+
+        &__container-icons {
+            align-self: end;
         }
 
         &__icons {
