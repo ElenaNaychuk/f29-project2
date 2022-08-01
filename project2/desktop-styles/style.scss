@@ -38,6 +38,13 @@
         input,
         fieldset {
             all: unset;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li {
+            padding: 0;
+            list-style: none;
         }
 
         // Общие стили для тега кнопка 
@@ -80,17 +87,26 @@
             font-size: 40px;
             line-height: 56px;
         }
-    
+
         // Общие стили для текста
-    
+
         p {
             font-size: 20px;
             line-height: 30px;
             letter-spacing: 0.2px;
         }
-    
+
+        .text {
+            font-family: 'Josefin Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            letter-spacing: 0.01rem;
+        }
+
         // Oбщие стили для всех предзаголовков <h5> с бордером сверху и снизу 
-    
+
         .pre-title {
             display: inline-block;
             border-top: 1px solid #E1B168;
@@ -105,7 +121,7 @@
             text-transform: uppercase;
             color: #292E36;
         }
-    
+
         // Общие стили для h4
         h4 {
             font-family: 'Cormorant Infant';
@@ -401,13 +417,14 @@
             background-color: transparent;
             color: $light-color;
             border: 1px solid #858585;
+            text-align: start;
         }
 
         &__item::placeholder {
             text-align: start;
 
             font-family: 'Josefin Sans';
-            
+
             color: $light-color;
         }
 
@@ -455,5 +472,136 @@
             border: 2px solid $accent-color;
             background-color: transparent;
             color: $accent-color;
+        }
+    }
+
+    // ======================== Footer
+
+    .footer {
+
+        background-color: $primary-color;
+
+        &__wrapper {
+            padding: 40px;
+        }
+
+        &__social {
+            margin-top: 60px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__tag {
+            color: $light-color;
+        }
+
+        &__logo {
+            max-width: 100%;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        &__icon:hover {
+            cursor: pointer;
+            filter: invert(23%) sepia(20%) saturate(928%) hue-rotate(354deg) brightness(92%) contrast(90%);
+        }
+
+        &__info {
+            padding-top: 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__contacts {
+            text-align: start;
+        }
+
+        &__pre-title {
+            color: $light-color;
+        }
+
+        &__list {
+            padding-top: 2rem;
+
+            &_item {
+                color: $light-color;
+            }
+
+            &_item span {
+                color: $accent-color;
+            }
+        }
+
+        /* .footer__join */
+
+        &__join {
+            align-self: flex-start;
+            color: $light-color;
+
+            &_title {
+                margin: 0 auto 25px;
+                max-width: 60%;
+                text-align: center;
+            }
+
+            &_form {
+                max-width: 100%;
+
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__subscribe {
+            min-width: 70%;
+            min-height: 70px;
+
+            padding: 10px 25px;
+
+            border: 2px solid $light-color;
+            border-right: none;
+        }
+
+        &__subscribe::placeholder {
+            color: $light-color;
+        }
+
+        &__subscribe:focus,
+        &__subscribe:hover {
+            border: 2px solid $accent-color;
+            transition: 0.3s ease-in-out;
+            border-right: none;
+        }
+
+        &__button {
+            max-width: 100%;
+            min-height: 70px;
+
+            cursor: pointer;
+            border: 2px solid $light-color;
+        }
+
+        &__button:focus {
+            border: 2px solid $accent-color;
+            background-color: $accent-color;
+            color: $light-color;
+        }
+
+        &__button:hover {
+            border: 2px solid $accent-color;
+            background-color: transparent;
+            color: $accent-color;
+        }
+
+        &__time {
+            text-align: end;
         }
     }
