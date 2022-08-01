@@ -19,6 +19,26 @@ $light-color: #FFFFFF;
         font-family: 'Cormorant Infant', serif;
     }
 
+    h4 {
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: $primary-color;
+    }
+
+    h6 {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+
     p,
     a {
         font-family: 'Josefin Sans', sans-serif;
@@ -95,8 +115,8 @@ $light-color: #FFFFFF;
 
     .pre-title {
         display: inline-block;
-        border-top: 1px solid #E1B168;
-        border-bottom: 1px solid #E1B168;
+        border-top: 1px solid $accent-color;
+        border-bottom: 1px solid $accent-color;
         padding-top: 5px;
         font-family: 'Josefin Sans';
         font-style: normal;
@@ -105,7 +125,11 @@ $light-color: #FFFFFF;
         line-height: 22px;
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: #292E36;
+        color: $primary-color;
+    }
+
+    .title-black {
+        font-weight: 700;
     }
 
     // Блок 2 Welcome
@@ -116,7 +140,7 @@ $light-color: #FFFFFF;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 5vh auto auto auto 5vh auto;
-        background: #292E36;
+        background: $primary-color;
         text-align: center;
 
         &__title {
@@ -127,7 +151,7 @@ $light-color: #FFFFFF;
             font-size: 50px;
             line-height: 60px;
             letter-spacing: 0.2px;
-            color: #FFFFFF;
+            color: $light-color;
             padding-left: 5vw;
             padding-right: 5vw;
         }
@@ -143,7 +167,7 @@ $light-color: #FFFFFF;
             font-size: 19px;
             line-height: 26px;
             letter-spacing: 0.2px;
-            color: #FFFFFF;
+            color: $light-color;
         }
 
         &__btn_transparent {
@@ -152,15 +176,15 @@ $light-color: #FFFFFF;
             grid-row: 4/5;
             width: 230px;
             margin-top: 3vh;
-            border: 2px solid #E1B168;
-            color: #E1B168;
+            border: 2px solid $accent-color;
+            color: $accent-color;
             margin: 5vh auto;
         }
 
         &__image {
             position: relative;
             width: 100%;
-            background: #292E36;
+            background: $primary-color;
             grid-column: 1/2;
             grid-row: 6/7;
             border-left: 4vw solid rgba(255, 255, 255, 0.1);
@@ -184,6 +208,208 @@ $light-color: #FFFFFF;
             }
         }
     }
+
+    // Блок 5 Dishes
+
+    .dishes {
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        text-align: center;
+
+        &_pre-title {
+            display: inline-flex;
+            padding-left: 2px;
+        }
+
+        &__title {
+            margin-top: 12px;
+        }
+
+        &__text {
+            padding: 8px 5vw;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding: 0 30px;
+
+        &__card-burger {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 25px 1fr auto auto;
+            background: url("../assets/images/burger-background-blue.png");
+            background-size: cover;
+            height: auto;
+            width: 100%;
+            padding-top: 30px;
+
+            &_white {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: 0 auto;
+            }
+
+            &_price {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 60px;
+                letter-spacing: 0.2px;
+                color: $primary-color;
+                padding-top: 2vh;
+            }
+
+            &_pre-title {
+                grid-column: 1/2;
+                grid-row: 2/3;               
+                border-top: 1px solid $primary-color;
+                border-bottom: 1px solid $primary-color;
+                margin: 0 auto;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                font-size: 35px;
+            }
+
+            &_text {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #555555;
+                padding: 0 30px 10px 30px;
+            }
+
+            &_photo {
+                grid-column: 1/2;
+                grid-row: 5/6;
+                object-fit: contain;
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        &__card-pizza {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 25px 1fr auto auto ;
+            background: url("../assets/images/pizza-background-gray.png");
+            background-size: cover;
+            background-position: top;
+            height: auto;
+            width: 100%;
+            padding-top: 30px;
+
+            &_black {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                margin: 0 auto;
+            }
+
+            &_price {
+                grid-column: 1/2;
+                grid-row: 1/2;
+                font-size: 60px;
+                letter-spacing: 0.2px;
+                color: $light-color;
+                padding-top: 2vh;
+            }
+
+            &_pre-title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                border-top: 1px solid $primary-color;
+                border-bottom: 1px solid $primary-color;
+                margin: 0 auto;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 3/4;
+                font-size: 35px;
+            }
+
+            &_text {
+                grid-column: 1/2;
+                grid-row: 4/5;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                color: #555555;
+                padding: 0 30px 10px 30px;
+            }
+
+            &_photo {
+                grid-column: 1/2;
+                grid-row: 5/6;
+                object-fit: contain;
+                width: 250px;
+                height: 250px;
+                margin: 0 auto;
+            }    
+        }
+    }
+
+    .dishes-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        width: 100%;
+        padding: 0 30px;
+
+        &__card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 63px 90px;
+            width: 100%;
+            
+            &_image {
+                grid-row: 1/2;
+                object-fit: contain;
+                width: 100%;
+                color: $primary-color;
+            }
+
+            &_title {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                border-bottom: 1px solid  #DCDCDC;
+                padding-top: 9px;
+                align-self: center;
+            }
+
+            &_title-right {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                text-align: right;
+                padding-top: 9px;
+                align-self: center;
+            }
+
+            &_text {
+                grid-row: 3/4;
+                font-size: 19px;
+            }
+        }
+
+        &__btn_transparent {
+            display: block;
+            width: 255px;
+            border: 2px solid $accent-color;
+            color: $accent-color;
+            margin: 3vh auto 5vh;
+        }
+    }
+
 
     .form {
 
