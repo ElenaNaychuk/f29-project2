@@ -410,60 +410,6 @@ $light-color: #FFFFFF;
         }
     }
 
-
-    .form {
-
-        &__wrapper {
-            padding: 30px;
-        }
-
-        &__overlay {
-            margin: 0;
-        }
-
-        &__pre-title {
-            margin: 40px;
-
-            color: $light-color;
-        }
-
-        &__container {
-            max-width: 80%;
-        }
-
-        &__form {
-            padding: 40px 0;
-
-            display: grid;
-            grid-template-columns: minmax(150px, 1fr);
-            grid-auto-flow: row;
-            gap: 15px;
-        }
-
-        &__item {
-            min-height: fit-content;
-            padding: 10px 15px;
-
-            font-size: 1rem;
-            line-height: 1.5rem;
-        }
-
-        &__item_name, 
-        &__item_email,
-        &__item_persons, 
-        &__item_time, 
-        &__item_date,
-        &__item_button {
-            grid-column: 1/2;
-        }
-
-        &__button {
-            min-width: 100%;
-
-            padding: 10px 15px;
-        }
-    }
-
     // ======================= Блок 6, offer
 
     .offer {
@@ -473,7 +419,7 @@ $light-color: #FFFFFF;
         }
 
         &__content {
-            margin: 20px auto;
+            margin: 30px auto;
             flex-direction: column;
         }
 
@@ -568,6 +514,61 @@ $light-color: #FFFFFF;
                 font-size: 1rem;
                 line-height: 2rem;
             }
+        }
+    }
+
+    // ======================== Блок 7, Form
+
+    .form {
+
+        &__wrapper {
+            padding: 30px;
+        }
+
+        &__overlay {
+            margin: 0;
+        }
+
+        &__pre-title {
+            margin: 30px;
+
+            color: $light-color;
+        }
+
+        &__container {
+            max-width: 80%;
+        }
+
+        &__form {
+            padding: 40px 0;
+
+            display: grid;
+            grid-template-columns: minmax(150px, 1fr);
+            grid-auto-flow: row;
+            gap: 15px;
+        }
+
+        &__item {
+            min-height: fit-content;
+            padding: 10px 15px;
+
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        &__item_name, 
+        &__item_email,
+        &__item_persons, 
+        &__item_time, 
+        &__item_date,
+        &__item_button {
+            grid-column: 1/2;
+        }
+
+        &__button {
+            min-width: 100%;
+
+            padding: 10px 15px;
         }
     }
 

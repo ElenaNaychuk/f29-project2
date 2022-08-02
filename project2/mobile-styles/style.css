@@ -337,44 +337,11 @@
     color: #E1B168;
     margin: 3vh auto 5vh;
   }
-  .form__wrapper {
-    padding: 30px;
-  }
-  .form__overlay {
-    margin: 0;
-  }
-  .form__pre-title {
-    margin: 40px;
-    color: #FFFFFF;
-  }
-  .form__container {
-    max-width: 80%;
-  }
-  .form__form {
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns: minmax(150px, 1fr);
-    grid-auto-flow: row;
-    gap: 15px;
-  }
-  .form__item {
-    min-height: fit-content;
-    padding: 10px 15px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .form__item_name, .form__item_email, .form__item_persons, .form__item_time, .form__item_date, .form__item_button {
-    grid-column: 1/2;
-  }
-  .form__button {
-    min-width: 100%;
-    padding: 10px 15px;
-  }
   .offer__wrapper {
     padding: 30px;
   }
   .offer__content {
-    margin: 20px auto;
+    margin: 30px auto;
     flex-direction: column;
   }
   .offer__word {
@@ -440,6 +407,39 @@
     margin-top: 15px;
     font-size: 1rem;
     line-height: 2rem;
+  }
+  .form__wrapper {
+    padding: 30px;
+  }
+  .form__overlay {
+    margin: 0;
+  }
+  .form__pre-title {
+    margin: 30px;
+    color: #FFFFFF;
+  }
+  .form__container {
+    max-width: 80%;
+  }
+  .form__form {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr);
+    grid-auto-flow: row;
+    gap: 15px;
+  }
+  .form__item {
+    min-height: fit-content;
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .form__item_name, .form__item_email, .form__item_persons, .form__item_time, .form__item_date, .form__item_button {
+    grid-column: 1/2;
+  }
+  .form__button {
+    min-width: 100%;
+    padding: 10px 15px;
   }
   .footer__wrapper {
     padding: 30px;
