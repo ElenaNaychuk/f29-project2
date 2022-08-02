@@ -464,6 +464,61 @@ $light-color: #FFFFFF;
         }
     }
 
+    // ======================= Блок 6, offer
+
+    .offer {
+
+        &__wrapper {
+            padding: 30px;
+        }
+
+        &__content {
+            margin: 20px auto;
+            flex-direction: column;
+        }
+
+        &__word {
+            max-width: 100%;
+            align-items: center;
+        }
+
+        &__pre-title {
+            color: $light-color;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__images {
+            max-width: 100%;
+            gap: 15px;
+
+            // flex-direction: column;
+        }
+
+        &__item {
+            padding: 10px;
+            min-width: 30%;
+
+            gap: 5px;
+            border: 10px solid #323841;
+        }
+
+        &__item img {
+            max-width: 100%;
+            object-fit: contain;
+
+        }
+
+        &__subtitle {
+            font-size: 1rem;
+            line-height: 1rem;
+
+            text-align: center;
+        }
+    }
+
     // ======================= Footer
 
     .footer {

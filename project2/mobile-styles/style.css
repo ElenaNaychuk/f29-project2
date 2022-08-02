@@ -370,6 +370,42 @@
     min-width: 100%;
     padding: 10px 15px;
   }
+  .offer__wrapper {
+    padding: 30px;
+  }
+  .offer__content {
+    margin: 20px auto;
+    flex-direction: column;
+  }
+  .offer__word {
+    max-width: 100%;
+    align-items: center;
+  }
+  .offer__pre-title {
+    color: #FFFFFF;
+  }
+  .offer__text {
+    text-align: center;
+  }
+  .offer__images {
+    max-width: 100%;
+    gap: 15px;
+  }
+  .offer__item {
+    padding: 10px;
+    min-width: 30%;
+    gap: 5px;
+    border: 10px solid #323841;
+  }
+  .offer__item img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .offer__subtitle {
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+  }
   .footer__wrapper {
     padding: 30px;
   }
