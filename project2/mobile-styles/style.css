@@ -7,10 +7,10 @@
     box-sizing: border-box;
   }
   h1 {
-    font-family: 'Cormorant Infant', serif;
+    font-family: "Cormorant Infant", serif;
   }
   h4 {
-    font-family: 'Cormorant Infant';
+    font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -20,7 +20,7 @@
     color: #292E36;
   }
   h6 {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -28,16 +28,16 @@
     letter-spacing: 0.2px;
   }
   p,
-  a {
-    font-family: 'Josefin Sans', sans-serif;
+a {
+    font-family: "Josefin Sans", sans-serif;
   }
   input,
-  fieldset {
+fieldset {
     all: unset;
     box-sizing: border-box;
   }
   ul,
-  li {
+li {
     padding: 0;
     list-style: none;
   }
@@ -55,7 +55,7 @@
   }
   .button {
     padding: 20px 45px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
@@ -65,14 +65,14 @@
     letter-spacing: 0.2px;
   }
   .small-title {
-    font-family: 'Cormorant Infant';
+    font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.5rem;
   }
   .text {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
@@ -83,8 +83,7 @@
     display: inline-block;
     border-top: 1px solid #E1B168;
     border-bottom: 1px solid #E1B168;
-    padding-top: 5px;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -95,6 +94,60 @@
   }
   .title-black {
     font-weight: 700;
+  }
+  .header {
+    height: auto;
+    background: #292E36;
+  }
+  .header__part1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    border-bottom: 1px solid #5C6168;
+  }
+  .header__part1_btn-transparent {
+    display: none;
+  }
+  .header__part1_logo {
+    padding: 5vh;
+    width: 350px;
+  }
+  .header__part1_btn-orange {
+    background: #E1B168;
+    color: #292E36;
+    border: 2px solid #E1B168;
+    margin-bottom: 5vh;
+  }
+  .header__part1_btn-orange:hover {
+    background-color: transparent;
+    color: #E1B168;
+  }
+  .header__part1_btn-orange:focus {
+    border: 2px solid #E1B168;
+    background-color: #E1B168;
+    color: #FFFFFF;
+  }
+  .header__part2 {
+    height: auto;
+  }
+  .header__part2_menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 6vw;
+    padding: 20px;
+    border-bottom: 1px solid #5C6168;
+  }
+  .header__part2_social-networks {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 5vw;
+    padding: 16px;
+    border-bottom: 1px solid #5C6168;
   }
   .welcome-block {
     width: 100%;
@@ -234,7 +287,8 @@
   .cards__card-burger_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -288,7 +342,8 @@
   .cards__card-pizza_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -308,14 +363,15 @@
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid  #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -366,7 +422,8 @@
   }
   .offer__item img {
     max-width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .offer__subtitle {
     font-size: 1rem;
@@ -429,6 +486,8 @@
     gap: 15px;
   }
   .form__item {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 10px 15px;
     font-size: 1rem;
@@ -490,6 +549,12 @@
   .footer__subscribe, .footer__button {
     min-width: 50%;
   }
+  .footer__subscribe::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .footer__subscribe:-ms-input-placeholder {
+    font-size: 1rem;
+  }
   .footer__subscribe::placeholder {
     font-size: 1rem;
   }
@@ -502,7 +567,9 @@
     text-align: center;
   }
   .footer__button {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     padding: 10px 15px;
   }
-}
+}/*# sourceMappingURL=style.css.map */

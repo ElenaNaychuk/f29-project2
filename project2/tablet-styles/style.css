@@ -7,10 +7,10 @@
     box-sizing: border-box;
   }
   h1 {
-    font-family: 'Cormorant Infant', serif;
+    font-family: "Cormorant Infant", serif;
   }
   h4 {
-    font-family: 'Cormorant Infant';
+    font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -20,7 +20,7 @@
     color: #292E36;
   }
   h6 {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -28,16 +28,16 @@
     letter-spacing: 0.2px;
   }
   p,
-  a {
-    font-family: 'Josefin Sans', sans-serif;
+a {
+    font-family: "Josefin Sans", sans-serif;
   }
   input,
-  fieldset {
+fieldset {
     all: unset;
     box-sizing: border-box;
   }
   ul,
-  li {
+li {
     padding: 0;
     list-style: none;
   }
@@ -55,7 +55,7 @@
   }
   .button {
     padding: 20px 45px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
@@ -65,14 +65,14 @@
     letter-spacing: 0.2px;
   }
   .small-title {
-    font-family: 'Cormorant Infant';
+    font-family: "Cormorant Infant";
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 56px;
   }
   .text {
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
@@ -83,8 +83,7 @@
     display: inline-block;
     border-top: 1px solid #E1B168;
     border-bottom: 1px solid #E1B168;
-    padding-top: 5px;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -95,6 +94,62 @@
   }
   .title-black {
     font-weight: 700;
+  }
+  .header {
+    height: auto;
+    background: #292E36;
+  }
+  .header__part1 {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 218px;
+    border-bottom: 1px solid #5C6168;
+  }
+  .header__part1_btn-transparent {
+    color: #FFFFFF;
+    border: 2px solid #E1B168;
+    padding: 20px 25px;
+    font-size: 20px;
+  }
+  .header__part1_logo {
+    height: 50%;
+    width: 30%;
+  }
+  .header__part1_btn-orange {
+    background: #E1B168;
+    color: #292E36;
+    border: 2px solid #E1B168;
+  }
+  .header__part1_btn-orange:hover {
+    background-color: transparent;
+    color: #E1B168;
+  }
+  .header__part1_btn-orange:focus {
+    border: 2px solid #E1B168;
+    background-color: #E1B168;
+    color: #FFFFFF;
+  }
+  .header__part2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 82px;
+    align-items: center;
+  }
+  .header__part2_menu {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 3vw;
+    margin-left: 31px;
+  }
+  .header__part2_social-networks {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    margin-right: 31px;
   }
   .welcome-block {
     width: 100%;
@@ -229,7 +284,8 @@
   .cards__card-burger_photo {
     grid-column: 2/3;
     grid-row: 2/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     margin: auto;
   }
   .cards__card-pizza {
@@ -280,7 +336,8 @@
   .cards__card-pizza_photo {
     grid-column: 2/3;
     grid-row: 2/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     height: 100%;
     margin: auto;
   }
@@ -301,14 +358,15 @@
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid  #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -399,4 +457,4 @@
   .footer__time {
     order: 3;
   }
-}
+}/*# sourceMappingURL=style.css.map */
