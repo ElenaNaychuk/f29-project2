@@ -347,6 +347,23 @@
     padding: 10px;
     min-width: 30%;
   }
+  .news__introduction {
+    margin: 20px auto 30px;
+  }
+  .news__text {
+    max-width: 100%;
+  }
+  .news__content {
+    margin-bottom: 20px;
+  }
+  .news__card_word {
+    padding: 20px;
+  }
+  .news__card_small-title {
+    margin-top: 0;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
   .form__wrapper {
     padding: 40px 40px;
   }

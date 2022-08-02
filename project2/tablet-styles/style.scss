@@ -434,6 +434,36 @@ $light-color: #FFFFFF;
         }
     }
 
+    // Блок 6, news
+
+    .news {
+
+        &__introduction {
+            margin: 20px auto 30px;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__content {
+            margin-bottom: 20px;
+        }
+
+        &__card {
+
+            &_word {
+                padding: 20px;
+            }
+
+            &_small-title {
+                margin-top: 0;
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
     // Блок 7, FORM
 
     .form {
