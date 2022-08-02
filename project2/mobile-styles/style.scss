@@ -519,6 +519,58 @@ $light-color: #FFFFFF;
         }
     }
 
+    // ======================= Блок 6, news 
+
+    .news {
+
+        &__wrapper {
+            padding: 30px;
+        }
+
+        &__introduction {
+            margin: 30px auto 30px;
+        }
+
+        &__small-title {
+            text-align: center;
+        }
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__content {
+            margin-bottom: 30px;
+
+            flex-direction: column;
+            row-gap: 30px;
+        }
+
+        &__card {
+
+            max-width: 100%;
+
+            &_image {
+                min-height: 250px;
+            }
+
+            &_word {
+                padding: 20px;
+            }
+
+            &_small-title {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+
+            &_text {
+                margin-top: 15px;
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
     // ======================= Footer
 
     .footer {
