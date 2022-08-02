@@ -489,6 +489,118 @@
         }
     }
 
+// Блок 6, news 
+
+.news {
+
+    background-color: $light-color;
+
+    &__wrapper {
+        padding: 40px;
+    }
+
+    &__introduction {
+        margin: 100px auto 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    &__pre-title {
+        margin: 0 auto;
+    }
+
+    &__text {
+        max-width: 35%;
+        text-align: center;
+    }
+
+    &__content {
+        margin-bottom: 60px;
+
+        display: flex;
+        column-gap: 50px;
+    }
+
+    &__button {
+        background-color: $accent-color;
+        color: $primary-color;
+        border: 2px solid $accent-color;
+    }
+
+    &__button:hover {
+        background-color: transparent;
+        color: $accent-color;
+    }
+
+    &__button:focus {
+        border: 2px solid $accent-color;
+        background-color: $accent-color;
+        color: $light-color;
+    }
+
+    &__card {
+
+        max-width: 50%;
+        border: 1px solid $accent-color;
+
+        &_image {
+            max-width: 100%;
+            min-height: 384px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &_image_1 {
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%), 
+                                url("../assets/images/card_1.jpg");
+        }
+
+        &_image_1:hover {
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+            url("../assets/images/card_1.jpg");
+            transition: 1s ease-in-out;
+        }
+
+        &_image_2 {
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 100%), 
+                                url("../assets/images/card_2.jpg");
+        }
+
+        &_image_2:hover {
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 100%),
+            url("../assets/images/card_2.jpg");
+        }
+
+        &_word {
+            padding: 50px;
+        }
+
+        &_pre-title {
+            margin-right: 30px;
+            margin-bottom: 15px;
+        }
+
+        &_small-title {
+            margin-top: 15px;
+
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        &_text {
+            margin-top: 30px;
+        }
+    }
+}
 
     // Блок 7, FORM
 

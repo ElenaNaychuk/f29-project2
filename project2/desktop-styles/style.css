@@ -407,6 +407,106 @@
   color: #FFFFFF;
 }
 
+.news {
+  background-color: #FFFFFF;
+}
+
+.news__wrapper {
+  padding: 40px;
+}
+
+.news__introduction {
+  margin: 100px auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.news__pre-title {
+  margin: 0 auto;
+}
+
+.news__text {
+  max-width: 35%;
+  text-align: center;
+}
+
+.news__content {
+  margin-bottom: 60px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.news__button {
+  background-color: #E1B168;
+  color: #292E36;
+  border: 2px solid #E1B168;
+}
+
+.news__button:hover {
+  background-color: transparent;
+  color: #E1B168;
+}
+
+.news__button:focus {
+  border: 2px solid #E1B168;
+  background-color: #E1B168;
+  color: #FFFFFF;
+}
+
+.news__card {
+  max-width: 50%;
+  border: 1px solid #E1B168;
+}
+
+.news__card_image {
+  max-width: 100%;
+  min-height: 384px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.news__card_image_1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../assets/images/card_1.jpg");
+}
+
+.news__card_image_1:hover {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../assets/images/card_1.jpg");
+  transition: 1s ease-in-out;
+}
+
+.news__card_image_2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../assets/images/card_2.jpg");
+}
+
+.news__card_image_2:hover {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../assets/images/card_2.jpg");
+}
+
+.news__card_word {
+  padding: 50px;
+}
+
+.news__card_pre-title {
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.news__card_small-title {
+  margin-top: 15px;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.news__card_text {
+  margin-top: 30px;
+}
+
 .form {
   max-width: 100%;
   background-image: url("../assets/images/form_image.jpg");
