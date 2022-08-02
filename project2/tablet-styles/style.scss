@@ -406,6 +406,33 @@ $light-color: #FFFFFF;
         }
     }
 
+    // Блок 6, offer
+
+    .offer {
+
+        &__content {
+            margin: 20px auto;
+
+            flex-direction: column;
+        }
+
+        &__word {
+            align-items: center;
+        }
+
+        &__pre-title {
+            color: $light-color;
+        }
+
+        &__text {
+            text-align: center;
+        }
+
+        &__item {
+            padding: 10px;
+            min-width: 30%;
+        }
+    }
 
     // Блок 7, FORM
 
