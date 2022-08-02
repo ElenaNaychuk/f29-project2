@@ -317,7 +317,7 @@
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid  #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -340,6 +340,71 @@
     color: #E1B168;
     margin: 12vh auto 20vh;
   }
+}
+
+.offer {
+  background-color: #292E36;
+}
+
+.offer__wrapper {
+  padding: 40px;
+}
+
+.offer__content {
+  margin: 100px auto 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 90px;
+  row-gap: 30px;
+}
+
+.offer__word {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.offer__pre-title {
+  display: inline-block;
+  color: #FFFFFF;
+}
+
+.offer__small-title {
+  color: #FFFFFF;
+}
+
+.offer__text {
+  color: #FFFFFF;
+}
+
+.offer__images {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.offer__item {
+  padding: 20px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 15px solid #323841;
+}
+
+.offer__subtitle {
+  font-family: 'Cormorant Infant';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #FFFFFF;
 }
 
 .form {
