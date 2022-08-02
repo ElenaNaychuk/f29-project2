@@ -449,7 +449,7 @@
         }
 
         &__small-title {
-            text-align: center;
+            margin: auto;
 
             color: $light-color;
         }
@@ -511,6 +511,7 @@
             font-family: 'Josefin Sans';
 
             color: $light-color;
+            opacity: 1;
         }
 
         &__item_label {
