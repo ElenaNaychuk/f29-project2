@@ -7,10 +7,10 @@
     box-sizing: border-box;
   }
   h1 {
-    font-family: "Cormorant Infant", serif;
+    font-family: 'Cormorant Infant', serif;
   }
   h4 {
-    font-family: "Cormorant Infant";
+    font-family: 'Cormorant Infant';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -20,7 +20,7 @@
     color: #292E36;
   }
   h6 {
-    font-family: "Josefin Sans";
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -28,16 +28,16 @@
     letter-spacing: 0.2px;
   }
   p,
-a {
-    font-family: "Josefin Sans", sans-serif;
+  a {
+    font-family: 'Josefin Sans', sans-serif;
   }
   input,
-fieldset {
+  fieldset {
     all: unset;
     box-sizing: border-box;
   }
   ul,
-li {
+  li {
     padding: 0;
     list-style: none;
   }
@@ -55,7 +55,7 @@ li {
   }
   .button {
     padding: 20px 45px;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1.5rem;
@@ -65,14 +65,14 @@ li {
     letter-spacing: 0.2px;
   }
   .small-title {
-    font-family: "Cormorant Infant";
+    font-family: 'Cormorant Infant';
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     line-height: 2.5rem;
   }
   .text {
-    font-family: "Josefin Sans";
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 1.25rem;
@@ -84,7 +84,7 @@ li {
     border-top: 1px solid #E1B168;
     border-bottom: 1px solid #E1B168;
     padding-top: 5px;
-    font-family: "Josefin Sans";
+    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -234,8 +234,7 @@ li {
   .cards__card-burger_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -289,8 +288,7 @@ li {
   .cards__card-pizza_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -310,15 +308,14 @@ li {
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid #DCDCDC;
+    border-bottom: 1px solid  #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -341,7 +338,7 @@ li {
     margin: 3vh auto 5vh;
   }
   .form__wrapper {
-    padding: 40px;
+    padding: 30px;
   }
   .form__overlay {
     margin: 0;
@@ -361,8 +358,6 @@ li {
     gap: 15px;
   }
   .form__item {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 10px 15px;
     font-size: 1rem;
@@ -376,7 +371,7 @@ li {
     padding: 10px 15px;
   }
   .footer__wrapper {
-    padding: 20px;
+    padding: 30px;
   }
   .footer__social {
     margin-top: 0;
@@ -424,12 +419,6 @@ li {
   .footer__subscribe, .footer__button {
     min-width: 50%;
   }
-  .footer__subscribe::-moz-placeholder {
-    font-size: 1rem;
-  }
-  .footer__subscribe:-ms-input-placeholder {
-    font-size: 1rem;
-  }
   .footer__subscribe::placeholder {
     font-size: 1rem;
   }
@@ -442,9 +431,7 @@ li {
     text-align: center;
   }
   .footer__button {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
     max-width: max-content;
     padding: 10px 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
