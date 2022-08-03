@@ -228,6 +228,10 @@ li {
     border: 2px solid #E1B168;
     color: #E1B168;
   }
+  .welcome-block__btn_transparent:hover {
+    background-color: #E1B168;
+    color: #292E36;
+  }
   .welcome-block__image {
     width: 100%;
     background: #292E36;
@@ -425,6 +429,10 @@ li {
     border: 2px solid #E1B168;
     color: #E1B168;
     margin: 12vh auto 20vh;
+  }
+  .dishes-menu__btn_transparent:hover {
+    background-color: #E1B168;
+    color: #292E36;
   }
 }
 .offer {

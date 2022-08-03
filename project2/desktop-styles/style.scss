@@ -286,6 +286,11 @@
                 color: $accent-color;
             }
 
+            &__btn_transparent:hover {
+                background-color: #E1B168;
+                color: #292E36;
+            }
+
             &__image {
                 width: 100%;
                 background: $primary-color;
@@ -511,6 +516,11 @@
                 border: 2px solid $accent-color;
                 color: $accent-color;
                 margin: 12vh auto 20vh;
+            }
+
+            &__btn_transparent:hover {
+                background-color: #E1B168;
+                color: #292E36;
             }
         }
     }
