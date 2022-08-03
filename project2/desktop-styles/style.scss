@@ -20,6 +20,10 @@
         text-decoration: none;
     }
 
+    .link:hover {
+        color:  $accent-color;
+    }
+
     .link:first-child {
         color: $accent-color;
     }
@@ -177,9 +181,13 @@
                 height: 288px;
                 border-bottom: 1px solid #5C6168;
 
-                &_btn-transparent{
+                &_btn-transparent {
                     color: $light-color;
                     border: 2px solid $accent-color;
+                }
+
+                &_btn-transparent:hover {
+                    color: $accent-color;
                 }
 
                 &_logo {
@@ -225,6 +233,10 @@
                     justify-content: flex-end;
                     gap: 1.5vw;
                     margin-right: 41px;
+
+                    &_link:hover {
+                        filter: invert(23%) sepia(20%) saturate(928%) hue-rotate(354deg) brightness(92%) contrast(90%);
+                    }
                 }
             }
         }

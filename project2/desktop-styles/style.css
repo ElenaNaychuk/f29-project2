@@ -14,6 +14,10 @@
   text-decoration: none;
 }
 
+.link:hover {
+  color: #E1B168;
+}
+
 .link:first-child {
   color: #E1B168;
 }
@@ -140,6 +144,9 @@ li {
     color: #FFFFFF;
     border: 2px solid #E1B168;
   }
+  .header__part1_btn-transparent:hover {
+    color: #E1B168;
+  }
   .header__part1_logo {
     height: 50%;
   }
@@ -177,6 +184,9 @@ li {
     justify-content: flex-end;
     gap: 1.5vw;
     margin-right: 41px;
+  }
+  .header__part2_social-networks_link:hover {
+    filter: invert(23%) sepia(20%) saturate(928%) hue-rotate(354deg) brightness(92%) contrast(90%);
   }
   .welcome-block {
     width: 100%;
