@@ -99,13 +99,6 @@
             border: none;
         }
 
-        .hidden {
-            visibility: hidden;
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
         // Общие стили для всех кнопок
 
         .button {
@@ -808,19 +801,12 @@
             opacity: 1;
         }
 
-        &__item_label {
-            display: flex;
-            align-items: center;
-        }
-
-        &__item:hover,
-        &__item_label:hover {
+        &__item:hover {
             border: 1px solid $accent-color;
             transition: 0.3s ease-in-out;
         }
 
-        &__item:focus,
-        &__item_label:focus {
+        &__item:focus {
             border: 1px solid $accent-color;
         }
 
