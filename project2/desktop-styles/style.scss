@@ -509,7 +509,7 @@
                 }
             }
         }
-
+    }
         .dishes-menu {
             display: flex;
             flex-wrap: wrap;
@@ -567,8 +567,64 @@
                 color: #292E36;
             }
         }
-    }
-
+        
+            //Блок 4 special dishes
+            .dish1{
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            max-width: 1360px;
+            background-color: white;
+            margin: 0 auto;
+            padding: 40px;
+            }
+            .dish1-left{
+                margin-right: 10rem;
+                display: grid;
+                grid-column: 1/2;
+            }
+            .dish1-left_button {
+                width: 255px;
+                border: 2px solid $accent-color;
+                color: $accent-color;
+                background:none;
+                margin: 4rem 0;
+            }
+            .dish1-left_button:hover {
+                background-color:$accent-color;
+                color: #292E36;
+            }
+            .dish1__left__title{
+                margin: 10px 0 2rem;
+            }
+            .dish1-right{
+                display: grid;
+                grid-column: 2/3;
+            }
+            .dish1-right-1{
+                display: grid;
+                grid-template-columns: auto 1fr;
+            }
+            .dish1-right-1-border {
+                border-bottom: 1px solid #AAAAAA;
+                width: 1fr;
+            }
+            .dish1__right__title{
+                font-size: 36px;
+                font-style: Regular;
+            }
+            .dish1-right-1-item2{
+                display: grid;
+            }
+            .dish1-right-1-item2git{
+                font-size: 30px;
+                display: grid;
+                grid-column:2/3;
+            }
+            .dish1-right-1-item3{
+                font-size: 20px;
+                
+            }
+            
     // Блок 6, offer
 
     .offer {
