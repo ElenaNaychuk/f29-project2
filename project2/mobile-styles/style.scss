@@ -198,6 +198,7 @@ $light-color: #FFFFFF;
 
         &__story {
             width: 100%;
+            padding-left: 0;
 
             &_title {
                 font-size: 37px;
@@ -210,6 +211,7 @@ $light-color: #FFFFFF;
             }
 
             &_year {
+                display: block;
                 margin-top: 25px;
                 margin-bottom: 20px;
 
@@ -230,6 +232,7 @@ $light-color: #FFFFFF;
 
                 &_year-2022-text {
                     padding-top: 20px;
+                    padding: 0;
                 }
             }
         }

@@ -157,6 +157,7 @@
   }
   .location-2__story {
     width: 100%;
+    padding-left: 0;
   }
   .location-2__story_title {
     font-size: 37px;
@@ -167,6 +168,7 @@
     padding-top: 15px;
   }
   .location-2__story_year {
+    display: block;
     margin-top: 25px;
     margin-bottom: 20px;
   }
@@ -184,6 +186,7 @@
   }
   .location-2__story_year_year-2022-text {
     padding-top: 20px;
+    padding: 0;
   }
   .dish {
     display: grid;
