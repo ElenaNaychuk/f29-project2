@@ -359,58 +359,58 @@ p {
         }
     }
 }
-        // Блок Location часть 2
-        .location-2 {
-            display: flex;
-            flex: 1.0;
-            padding: 84px 40px;
-            background: #FFF8F5;
+// Блок Location часть 2
+.location-2 {
+    display: flex;
+    flex: 1.0;
+    padding: 84px 40px;
+    background: #FFF8F5;
 
-            &__image{
-                width: 50%;
-                object-fit: cover;
+    &__image{
+        width: 50%;
+        object-fit: cover;
+    }
+    &__story {
+        width: 50%;
+        padding-left: 40px;
+
+        &_text {
+            padding-top: 15px;
+        }
+
+        &_year {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            margin-top: 25px;
+            margin-bottom: 20px;
+
+            &_year-2018-title {
+                grid-column: 1/2;
+                grid-row: 1/2;
             }
-            &__story {
-                width: 50%;
-                padding-left: 40px;
 
-                &_text {
-                    padding-top: 15px;
-                }
+            &_year-2018-text {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                padding-top: 20px;
+            }
 
-                &_year {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: auto auto;
-                    margin-top: 25px;
-                    margin-bottom: 20px;
+            &_year-2022-title {
+                grid-column: 2/3;
+                grid-row: 1/2;
+                padding-left: 3vw;
+            }
 
-                    &_year-2018-title {
-                        grid-column: 1/2;
-                        grid-row: 1/2;
-                    }
-
-                    &_year-2018-text {
-                        grid-column: 1/2;
-                        grid-row: 2/3;
-                        padding-top: 20px;
-                    }
-
-                    &_year-2022-title {
-                        grid-column: 2/3;
-                        grid-row: 1/2;
-                        padding-left: 3vw;
-                    }
-
-                    &_year-2022-text {
-                        grid-column: 2/3;
-                        grid-row: 2/3;
-                        padding-left: 3vw;
-                        padding-top: 20px;
-                    }
-                }
+            &_year-2022-text {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                padding-left: 3vw;
+                padding-top: 20px;
             }
         }
+    }
+}
 
 .dishes {
     padding: 15vh 40px 5vh;
@@ -505,6 +505,7 @@ p {
         width: 47vw;
         padding-left: 1.5vw;
 
+    /*
                 &_image {
                     grid-row: 1/2;
                     object-fit: contain;
@@ -554,6 +555,7 @@ p {
 
         &__wrapper {
             padding: 40px;
+    */
         &_black {
             grid-column: 1/2;
             grid-row: 1/3;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -433,45 +434,15 @@ p {
   height: 400px;
   width: 47vw;
   padding-left: 1.5vw;
-}
-.cards__card-pizza_image {
-  grid-row: 1/2;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-  color: #292E36;
-}
-.cards__card-pizza_title {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  border-bottom: 1px solid #DCDCDC;
-  padding-top: 9px;
-  align-self: center;
-}
-.cards__card-pizza_title-right {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  text-align: right;
-  padding-top: 9px;
-  align-self: center;
-}
-.cards__card-pizza_text {
-  grid-row: 3/4;
-  font-size: 19px;
-  padding-top: 15px;
-}
-.cards__btn_transparent {
-  display: block;
-  width: 255px;
-  border: 2px solid #E1B168;
-  color: #E1B168;
-  margin: 12vh auto 20vh;
-}
-.cards__btn_transparent:hover {
-  background-color: #E1B168;
-  color: #292E36;
-}
+  /*
+              &_image {
+                  grid-row: 1/2;
+                  object-fit: contain;
+                  width: 100%;
+                  color: $primary-color;
+              }
 
+<<<<<<< HEAD
 .offer {
   background-color: #292E36;
 }
@@ -479,11 +450,129 @@ p {
   padding: 40px;
 }
 .offer__wrapper_black {
+=======
+              &_title {
+                  grid-column: 1/2;
+                  grid-row: 2/3;
+                  border-bottom: 1px solid #DCDCDC;
+                  padding-top: 9px;
+                  align-self: center;
+              }
+              &_title-right {
+                  grid-column: 1/2;
+                  grid-row: 2/3;
+                  text-align: right;
+                  padding-top: 9px;
+                  align-self: center;
+              }
+              &_text {
+                  grid-row: 3/4;
+                  font-size: 19px;
+                  padding-top: 15px;
+              }
+          }
+          &__btn_transparent {
+              display: block;
+              width: 255px;
+              border: 2px solid $accent-color;
+              color: $accent-color;
+              margin: 12vh auto 20vh;
+          }
+
+          &__btn_transparent:hover {
+              background-color: #E1B168;
+              color: #292E36;
+          }
+      }
+          //Блок 4 special dishes
+          .dish1{
+          display:grid;
+          grid-template-columns: 1fr 2fr; 
+          max-width: 1360px;
+          background-color: white;
+          margin: 0 auto;
+
+          }
+          .dish1-left{
+              margin-right: 10rem;
+              display: grid;
+              grid-column: 1/2;
+              height: fit-content;
+          }
+          .dish1__left{
+              width: fit-content;
+          }
+          .dish1-left_button {
+              width: 255px;
+              border: 2px solid $accent-color;
+              color: $accent-color;
+              background:none;
+              margin: 4rem 0;
+          }
+          .dish1-left_button:hover {
+              background-color:$accent-color;
+              color: #292E36;
+          }
+          .dish1__left__title{
+              margin: 10px 0 2rem;
+          }
+          .dish1-right-1{
+              display: grid;
+              grid-template-columns: auto auto 1fr 20px;
+              grid-template-rows:  auto 1fr;
+          }
+          .dish1-right-1-border{
+              border-bottom: 1px solid #AAAAAA;
+              width: 1fr;
+          }
+          .dish1__right__title{
+              margin: 2rem 0 3rem;
+              display: grid;
+              grid-column: 1/7;
+              font-size: 36px;
+              font-style: "Regular";
+          }
+          .dish1-right-1-item1{
+              display: grid;
+              grid-column: 1/2;
+              grid-row: 2/4;
+          }
+          .dish1-right-1-item2{
+              font-size: 30px;
+              max-height: 42px;
+              display: grid;
+              grid-column: 2/3;
+              grid-row: 2/3;
+          }
+          .dish1-right-1-item3{
+              font-size: 20px;
+              max-height: 30px;
+              margin: 2px;
+              display: grid;
+              grid-column: 2/3;
+              grid-row: 2/3;
+          }
+          .dish1-right-1-item3, .dish1-right-1-border, .ish1-right-1-price{
+              grid-template-columns: auto 1fr 50px;
+          }
+
+  // Блок 6, offer
+
+  .offer {
+
+      background-color: $primary-color;
+
+      &__wrapper {
+          padding: 40px;
+  */
+}
+.cards__card-pizza_black {
+>>>>>>> 613847f95f067c27107633a1d816b96419ec4e94
   grid-column: 1/2;
   grid-row: 1/3;
   padding-top: 7vh;
 }
-.offer__wrapper_price {
+.cards__card-pizza_price {
   grid-column: 1/2;
   grid-row: 1/3;
   margin-top: 8.5vh;
@@ -492,19 +581,19 @@ p {
   color: #FFFFFF;
   margin-left: 4.5vw;
 }
-.offer__wrapper_pre-title {
+.cards__card-pizza_pre-title {
   grid-column: 1/2;
   grid-row: 3/4;
   border-top: 1px solid #292E36;
   border-bottom: 1px solid #292E36;
   margin-right: auto;
 }
-.offer__wrapper_title {
+.cards__card-pizza_title {
   grid-column: 1/2;
   grid-row: 4/5;
   font-size: 35px;
 }
-.offer__wrapper_text {
+.cards__card-pizza_text {
   grid-column: 1/2;
   grid-row: 5/7;
   font-weight: 400;
@@ -514,7 +603,7 @@ p {
   color: #555555;
   padding-bottom: 40px;
 }
-.offer__wrapper_photo {
+.cards__card-pizza_photo {
   grid-column: 2/3;
   grid-row: 2/6;
   padding-right: 2vw;

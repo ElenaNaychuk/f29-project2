@@ -25,6 +25,7 @@
     background: #E1B168;
     color: #292E36;
     border: 2px solid #E1B168;
+    width: 215px;
   }
   .header__part1_btn-orange:hover {
     background-color: transparent;
