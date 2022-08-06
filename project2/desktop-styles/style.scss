@@ -545,77 +545,6 @@ p {
                 color: #292E36;
             }
         }
-            //Блок 4 special dishes
-            .dish1{
-            display:grid;
-            grid-template-columns: 1fr 2fr; 
-            max-width: 1360px;
-            background-color: white;
-            margin: 0 auto;
-            
-            }
-            .dish1-left{
-                margin-right: 10rem;
-                display: grid;
-                grid-column: 1/2;
-                height: fit-content;
-            }
-            .dish1__left{
-                width: fit-content;
-            }
-            .dish1-left_button {
-                width: 255px;
-                border: 2px solid $accent-color;
-                color: $accent-color;
-                background:none;
-                margin: 4rem 0;
-            }
-            .dish1-left_button:hover {
-                background-color:$accent-color;
-                color: #292E36;
-            }
-            .dish1__left__title{
-                margin: 10px 0 2rem;
-            }
-            .dish1-right-1{
-                display: grid;
-                grid-template-columns: auto auto 1fr 20px;
-                grid-template-rows:  auto 1fr;
-            }
-            .dish1-right-1-border{
-                border-bottom: 1px solid #AAAAAA;
-                width: 1fr;
-            }
-            .dish1__right__title{
-                margin: 2rem 0 3rem;
-                display: grid;
-                grid-column: 1/7;
-                font-size: 36px;
-                font-style: "Regular";
-            }
-            .dish1-right-1-item1{
-                display: grid;
-                grid-column: 1/2;
-                grid-row: 2/4;
-            }
-            .dish1-right-1-item2{
-                font-size: 30px;
-                max-height: 42px;
-                display: grid;
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
-            .dish1-right-1-item3{
-                font-size: 20px;
-                max-height: 30px;
-                margin: 2px;
-                display: grid;
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
-            .dish1-right-1-item3, .dish1-right-1-border, .ish1-right-1-price{
-                grid-template-columns: auto 1fr 50px;
-            }
 
     // Блок 6, offer
 
@@ -739,18 +668,20 @@ p {
 .dish1 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-width: 1360px;
+    max-width: 1440px;
     background-color: white;
     margin: 0 auto;
     padding: 40px;
 }
-
-.dish1-left {
+.dish1-left{
     margin-right: 10rem;
+    height: fit-content;
     display: grid;
     grid-column: 1/2;
 }
-
+.dish1__left{
+    width: fit-content;
+}
 .dish1-left_button {
     width: 255px;
     border: 2px solid $accent-color;
@@ -775,29 +706,90 @@ p {
 
 .dish1-right-1 {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr 50px;
 }
 
 .dish1-right-1-border {
     border-bottom: 1px solid #AAAAAA;
-    width: 1fr;
+    width: 2fr;
+    grid-column: 3/6;
+    margin-bottom: 1rem;
 }
 
 .dish1__right__title {
     font-size: 36px;
     font-style: Regular;
+    display: grid;
+    grid-column: 1/7;
+    margin: 2rem 0 3rem 0;
+    
+}
+.dish1-right-1-item1{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/4;
 }
 .dish1-right-1-item2 {
     display: grid;
-    
-}
-.dish1-right-1-item2git {
+    grid-template-columns: 2/3;
     font-size: 30px;
-    display: grid;
+    max-height: 42px;
     grid-column: 2/3;
+    grid-row: 2/3;
+    width: fit-content;
 }
 .dish1-right-1-item3 {
     font-size: 20px;
+    grid-row: 2/3;
+    margin-top: 3rem;
+    max-height: 30px;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: fit-content;
+}
+.dish1-right-1-price{
+    grid-column: 6/7;
+    grid-row:2/3;
+    margin-top: 2.5rem;
+    margin-right: 0;
+    font-size: 30px;
+    font-family: 'Cormorant Infant', serif;
+}
+.dish1-right-2{
+    display: grid;
+    grid-template-columns: fit-content auto 2fr 50px;
+    grid-template-rows: 1fr;
+    margin-top: 6rem;
+}
+.dish1-right-2-item1{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.dish1-right-2-item2 {
+    display: grid;
+    grid-template-columns: 2/3;
+    font-size: 30px;
+    max-height: 42px;
+    grid-column: 2/3;
+}
+.dish1-right-2-item3 {
+    font-size: 20px;
+    display: grid;
+    grid-column: 2/3;
+    align-items: top;
+}
+.dish1-right-2-border {
+    border-bottom: 1px solid #AAAAAA;
+    width: 1fr;
+    grid-column: 3/4;
+}
+.dish1-right-2-price{
+    grid-column: 6/7;
+    grid-row:2/3;
+    font-size: 30px;
+    font-family: 'Cormorant Infant', serif;
 }
 // Блок 6, offer
 
