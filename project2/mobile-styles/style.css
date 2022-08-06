@@ -1,101 +1,11 @@
 @media (max-width: 767.98px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  h1 {
-    font-family: "Cormorant Infant", serif;
-  }
-  h4 {
-    font-family: "Cormorant Infant";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    text-transform: capitalize;
-    color: #292E36;
-  }
-  h6 {
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-  }
-  p,
-a {
-    font-family: "Josefin Sans", sans-serif;
-  }
-  input,
-fieldset {
-    all: unset;
-    box-sizing: border-box;
-  }
-  ul,
-li {
-    padding: 0;
-    list-style: none;
-  }
-  button {
-    border: none;
-  }
-  button:focus {
-    border: none;
-  }
-  .button {
-    padding: 20px 45px;
-    font-family: "Josefin Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-  }
-  .small-title {
-    font-family: "Cormorant Infant";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .text {
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    letter-spacing: 0.01rem;
-  }
-  .pre-title {
-    display: inline-block;
-    border-top: 1px solid #E1B168;
-    border-bottom: 1px solid #E1B168;
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #292E36;
-  }
-  .title-black {
-    font-weight: 700;
-  }
   .header {
     height: auto;
     background: #292E36;
   }
   .header__part1 {
     display: flex;
-    flex: 1;
+    flex: 1.0;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -125,10 +35,13 @@ li {
   }
   .header__part2 {
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
   .header__part2_menu {
+    margin: 0;
+    width: 100%;
     display: flex;
-    flex: 1;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 6vw;
@@ -136,8 +49,9 @@ li {
     border-bottom: 1px solid #5C6168;
   }
   .header__part2_social-networks {
+    margin: 0;
+    width: 100%;
     display: flex;
-    flex: 1;
     justify-content: center;
     gap: 5vw;
     padding: 16px;
@@ -321,8 +235,7 @@ li {
   .cards__card-burger_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -376,8 +289,7 @@ li {
   .cards__card-pizza_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -397,15 +309,14 @@ li {
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid #DCDCDC;
+    border-bottom: 1px solid  #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -456,8 +367,7 @@ li {
   }
   .offer__item img {
     max-width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
   }
   .offer__subtitle {
     font-size: 1rem;
@@ -520,8 +430,6 @@ li {
     gap: 15px;
   }
   .form__item {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 10px 15px;
     font-size: 1rem;
@@ -583,12 +491,6 @@ li {
   .footer__subscribe, .footer__button {
     min-width: 50%;
   }
-  .footer__subscribe::-moz-placeholder {
-    font-size: 1rem;
-  }
-  .footer__subscribe:-ms-input-placeholder {
-    font-size: 1rem;
-  }
   .footer__subscribe::placeholder {
     font-size: 1rem;
   }
@@ -601,9 +503,7 @@ li {
     text-align: center;
   }
   .footer__button {
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
     max-width: max-content;
     padding: 10px 15px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

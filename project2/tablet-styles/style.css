@@ -1,101 +1,11 @@
 @media (min-width: 768px) and (max-width: 1023.98px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  * {
-    box-sizing: border-box;
-  }
-  h1 {
-    font-family: "Cormorant Infant", serif;
-  }
-  h4 {
-    font-family: "Cormorant Infant";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 56px;
-    letter-spacing: 0.2px;
-    text-transform: capitalize;
-    color: #292E36;
-  }
-  h6 {
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-  }
-  p,
-a {
-    font-family: "Josefin Sans", sans-serif;
-  }
-  input,
-fieldset {
-    all: unset;
-    box-sizing: border-box;
-  }
-  ul,
-li {
-    padding: 0;
-    list-style: none;
-  }
-  button {
-    border: none;
-  }
-  button:focus {
-    border: none;
-  }
-  .button {
-    padding: 20px 45px;
-    font-family: "Josefin Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-  }
-  .small-title {
-    font-family: "Cormorant Infant";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 56px;
-  }
-  .text {
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.875rem;
-    letter-spacing: 0.01rem;
-  }
-  .pre-title {
-    display: inline-block;
-    border-top: 1px solid #E1B168;
-    border-bottom: 1px solid #E1B168;
-    font-family: "Josefin Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #292E36;
-  }
-  .title-black {
-    font-weight: 700;
-  }
   .header {
     height: auto;
     background: #292E36;
   }
   .header__part1 {
     display: flex;
-    flex: 1;
+    flex: 1.0;
     justify-content: space-around;
     align-items: center;
     height: 218px;
@@ -133,14 +43,14 @@ li {
   }
   .header__part2_menu {
     display: flex;
-    flex: 1;
+    flex: 1.0;
     justify-content: flex-start;
     gap: 3vw;
     margin-left: 31px;
   }
   .header__part2_social-networks {
     display: flex;
-    flex: 1;
+    flex: 1.0;
     justify-content: flex-end;
     gap: 1.5vw;
     margin-right: 31px;
@@ -208,6 +118,29 @@ li {
     right: 0;
     width: 270px;
     height: 270px;
+  }
+  .location {
+    background-color: #FFF8F5;
+  }
+  .location__icons {
+    column-gap: 20px;
+  }
+  .location__item {
+    grid-template-columns: minmax(50px, 1fr) 5fr;
+    grid-template-rows: 50px 50px;
+    column-gap: 10px;
+  }
+  .location__item_img {
+    max-width: 100%;
+  }
+  .location__item_small-title {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .location__item_text {
+    align-self: flex-start;
+    font-size: 1rem;
   }
   .dish {
     display: grid;
@@ -303,8 +236,7 @@ li {
   .cards__card-burger_photo {
     grid-column: 2/3;
     grid-row: 2/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     margin: auto;
   }
   .cards__card-pizza {
@@ -355,8 +287,7 @@ li {
   .cards__card-pizza_photo {
     grid-column: 2/3;
     grid-row: 2/6;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     height: 100%;
     margin: auto;
   }
@@ -377,15 +308,14 @@ li {
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid #DCDCDC;
+    border-bottom: 1px solid  #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -476,4 +406,4 @@ li {
   .footer__time {
     order: 3;
   }
-}/*# sourceMappingURL=style.css.map */
+}
