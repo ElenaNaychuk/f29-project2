@@ -144,6 +144,56 @@
     align-self: flex-start;
     font-size: 1rem;
   }
+  .location-2 {
+    display: flex;
+    flex: 1;
+    padding: 64px 35px;
+    background: #FFF8F5;
+  }
+  .location-2__image {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .location-2__story {
+    width: 50%;
+    padding-left: 40px;
+  }
+  .location-2__story_title {
+    font-size: 37px;
+  }
+  .location-2__story_text {
+    padding-top: 15px;
+  }
+  .location-2__story_year {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .location-2__story_year_year-2018-title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 37px;
+  }
+  .location-2__story_year_year-2018-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding-top: 20px;
+  }
+  .location-2__story_year_year-2022-title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 3vw;
+    font-size: 37px;
+  }
+  .location-2__story_year_year-2022-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-left: 3vw;
+    padding-top: 20px;
+  }
   .dish {
     display: grid;
     grid-template-columns: 1fr 2fr;
