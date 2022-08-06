@@ -760,7 +760,7 @@ p {
 }
 .dish1-right-2{
     display: grid;
-    grid-template-columns: fit-content auto 2fr 50px;
+    grid-template-columns: auto auto 2fr 50px;
     grid-template-rows: 1fr;
     margin-top: 6rem;
 }
@@ -775,23 +775,27 @@ p {
     font-size: 30px;
     max-height: 42px;
     grid-column: 2/3;
+    grid-row: 1/2;
 }
 .dish1-right-2-item3 {
     font-size: 20px;
     display: grid;
     grid-column: 2/3;
-    align-items: top;
+    grid-row: 1/2;
+    margin-top: 3rem;
 }
 .dish1-right-2-border {
     border-bottom: 1px solid #AAAAAA;
-    width: 1fr;
-    grid-column: 3/4;
+    width: 2fr;
+    grid-column: 3/5;
+    margin-bottom: 1rem;
 }
 .dish1-right-2-price{
     grid-column: 6/7;
     grid-row:2/3;
     font-size: 30px;
     font-family: 'Cormorant Infant', serif;
+    margin-top: -2.5rem;
 }
 // Блок 6, offer
 
