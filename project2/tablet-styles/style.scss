@@ -68,13 +68,6 @@ $light-color: #FFFFFF;
         border: none;
     }
 
-    .hidden {
-        visibility: hidden;
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
     // Общие стили для всех кнопок
 
     .button {
@@ -274,14 +267,12 @@ $light-color: #FFFFFF;
         }
     }
     //Блок 4 special dishes
-    .wrapper4{
-        max-width: 1360px;
-        background-color: white;
-        margin: 0 auto;
-    }
     .dish{
         display:grid;
         grid-template-columns: 1fr 2fr;
+        max-width: 1360px;
+        background-color: white;
+        margin: 0 auto;
     }
     .dish-left{
         grid-row:1/6;
@@ -292,25 +283,14 @@ $light-color: #FFFFFF;
         margin-top: 4rem;
         grid-template-columns: 1fr;
         width: 100%;
-        align-items: start;
     }
-    .dish-right-1{
+    .dish1-right-1{
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: auto 1fr;
     }
     .dish-right-1-border {
         border-bottom: 1px solid #AAAAAA;
         width: 1fr;
-    }
-    .dish-right-1_1{
-        grid-template-columns: 1fr auto;
-    }
-
-    .dish-right-1_2{
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto 2fr 5px;
     }
     // Блок 5 Dishes 
 

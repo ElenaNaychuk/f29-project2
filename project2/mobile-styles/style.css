@@ -47,12 +47,6 @@ li {
   button:focus {
     border: none;
   }
-  .hidden {
-    visibility: hidden;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
   .button {
     padding: 20px 45px;
     font-family: "Josefin Sans", sans-serif;

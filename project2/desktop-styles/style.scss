@@ -99,13 +99,6 @@
             border: none;
         }
 
-        .hidden {
-            visibility: hidden;
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
         // Общие стили для всех кнопок
 
         .button {
@@ -533,28 +526,10 @@
             padding: 40px;
             }
             .dish1-left{
-                grid-row:1/6;
                 margin-right: 10rem;
-            }
-            .dish1-right{
                 display: grid;
-                margin-top: 2rem;
-                grid-template-columns: 1fr;
-                width: 100%;
+                grid-column: 1/2;
             }
-            .dish1-right-1{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            .dish1-right-1-border {
-                border-bottom: 1px solid #AAAAAA;
-                width: 1fr;
-            }
-            .dish-right-2{
-                width: 100%;
-                display: grid;
-                grid-template-columns: auto 2fr 5px;
-                }
             .dish1-left_button {
                 width: 255px;
                 border: 2px solid $accent-color;
@@ -569,16 +544,32 @@
             .dish1__left__title{
                 margin: 10px 0 2rem;
             }
+            .dish1-right{
+                display: grid;
+                grid-column: 2/3;
+            }
+            .dish1-right-1{
+                display: grid;
+                grid-template-columns: auto 1fr;
+            }
+            .dish1-right-1-border {
+                border-bottom: 1px solid #AAAAAA;
+                width: 1fr;
+            }
             .dish1__right__title{
-                margin: 10px 0 2rem;
                 font-size: 36px;
                 font-style: Regular;
             }
             .dish1-right-1-item2{
+                display: grid;
+            }
+            .dish1-right-1-item2git{
                 font-size: 30px;
+                display: grid;
+                grid-column:2/3;
             }
             .dish1-right-1-item3{
-            font-size: 20px;
+                font-size: 20px;
             }
     // Блок 6, offer
 
@@ -863,19 +854,12 @@
             opacity: 1;
         }
 
-        &__item_label {
-            display: flex;
-            align-items: center;
-        }
-
-        &__item:hover,
-        &__item_label:hover {
+        &__item:hover {
             border: 1px solid $accent-color;
             transition: 0.3s ease-in-out;
         }
 
-        &__item:focus,
-        &__item_label:focus {
+        &__item:focus {
             border: 1px solid $accent-color;
         }
 

@@ -47,12 +47,6 @@ li {
   button:focus {
     border: none;
   }
-  .hidden {
-    visibility: hidden;
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
   .button {
     padding: 20px 45px;
     font-family: "Josefin Sans", sans-serif;
@@ -215,14 +209,12 @@ li {
     width: 270px;
     height: 270px;
   }
-  .wrapper4 {
-    max-width: 1360px;
-    background-color: white;
-    margin: 0 auto;
-  }
   .dish {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    max-width: 1360px;
+    background-color: white;
+    margin: 0 auto;
   }
   .dish-left {
     grid-row: 1/6;
@@ -233,24 +225,14 @@ li {
     margin-top: 4rem;
     grid-template-columns: 1fr;
     width: 100%;
-    align-items: start;
   }
-  .dish-right-1 {
+  .dish1-right-1 {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
   }
   .dish-right-1-border {
     border-bottom: 1px solid #AAAAAA;
     width: 1fr;
-  }
-  .dish-right-1_1 {
-    grid-template-columns: 1fr auto;
-  }
-  .dish-right-1_2 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 2fr 5px;
   }
   .dishes {
     padding-top: 10vh;
