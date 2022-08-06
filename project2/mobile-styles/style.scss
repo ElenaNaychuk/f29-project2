@@ -50,10 +50,13 @@ $light-color: #FFFFFF;
 
         &__part2 {
             height: auto;
+            display: flex;
+            flex-direction: column;
 
             &_menu {
+                margin: 0;
+                width: 100%;
                 display: flex;
-                flex: 1.0;
                 justify-content: space-around;
                 flex-wrap: wrap;
                 gap: 6vw;
@@ -62,8 +65,9 @@ $light-color: #FFFFFF;
             }
 
             &_social-networks {
+                margin: 0;
+                width: 100%;
                 display: flex;
-                flex: 1.0;
                 justify-content: center;
                 gap: 5vw;
                 padding: 16px;

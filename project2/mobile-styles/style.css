@@ -35,10 +35,13 @@
   }
   .header__part2 {
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
   .header__part2_menu {
+    margin: 0;
+    width: 100%;
     display: flex;
-    flex: 1.0;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 6vw;
@@ -46,8 +49,9 @@
     border-bottom: 1px solid #5C6168;
   }
   .header__part2_social-networks {
+    margin: 0;
+    width: 100%;
     display: flex;
-    flex: 1.0;
     justify-content: center;
     gap: 5vw;
     padding: 16px;
