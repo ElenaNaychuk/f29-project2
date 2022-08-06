@@ -5,7 +5,7 @@
   }
   .header__part1 {
     display: flex;
-    flex: 1.0;
+    flex: 1;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -235,7 +235,8 @@
   .cards__card-burger_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -289,7 +290,8 @@
   .cards__card-pizza_photo {
     grid-column: 1/2;
     grid-row: 5/6;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 250px;
     height: 250px;
     margin: 0 auto;
@@ -309,14 +311,15 @@
   }
   .dishes-menu__card_image {
     grid-row: 1/2;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
     width: 100%;
     color: #292E36;
   }
   .dishes-menu__card_title {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-bottom: 1px solid  #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
     padding-top: 9px;
     align-self: center;
   }
@@ -367,7 +370,8 @@
   }
   .offer__item img {
     max-width: 100%;
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .offer__subtitle {
     font-size: 1rem;
@@ -430,6 +434,8 @@
     gap: 15px;
   }
   .form__item {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
     min-height: fit-content;
     padding: 10px 15px;
     font-size: 1rem;
@@ -491,6 +497,12 @@
   .footer__subscribe, .footer__button {
     min-width: 50%;
   }
+  .footer__subscribe::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .footer__subscribe:-ms-input-placeholder {
+    font-size: 1rem;
+  }
   .footer__subscribe::placeholder {
     font-size: 1rem;
   }
@@ -503,7 +515,9 @@
     text-align: center;
   }
   .footer__button {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     padding: 10px 15px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
