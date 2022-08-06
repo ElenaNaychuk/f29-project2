@@ -125,6 +125,31 @@
     width: 200px;
     height: 200px;
   }
+  .location__wrapper {
+    padding: 30px;
+  }
+  .location__icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .location__item {
+    grid-template-columns: minmax(30px, 1fr) 4fr;
+    grid-template-rows: 50px 50px;
+  }
+  .location__item_img {
+    max-width: 100%;
+  }
+  .location__item_small-title {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .location__item_text {
+    align-self: flex-start;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
   .dish {
     display: grid;
     grid-template-columns: 1fr 2fr;
