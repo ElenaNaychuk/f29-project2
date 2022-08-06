@@ -170,11 +170,6 @@ li {
     padding-top: 5vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 26px;
-    letter-spacing: 0.2px;
     color: #FFFFFF;
   }
   .welcome-block__btn_transparent {
@@ -210,6 +205,45 @@ li {
     right: 0;
     width: 200px;
     height: 200px;
+  }
+  .location-2 {
+    padding: 54px 30px;
+    background: #FFF8F5;
+  }
+  .location-2__image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .location-2__story {
+    width: 100%;
+  }
+  .location-2__story_title {
+    font-size: 37px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .location-2__story_text {
+    padding-top: 15px;
+  }
+  .location-2__story_year {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .location-2__story_year_year-2018-title {
+    font-size: 37px;
+    text-align: center;
+  }
+  .location-2__story_year_year-2018-text {
+    padding-top: 20px;
+  }
+  .location-2__story_year_year-2022-title {
+    padding-top: 20px;
+    font-size: 37px;
+    text-align: center;
+  }
+  .location-2__story_year_year-2022-text {
+    padding-top: 20px;
   }
   .dish {
     display: grid;

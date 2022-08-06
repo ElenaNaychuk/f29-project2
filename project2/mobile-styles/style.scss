@@ -220,11 +220,6 @@ $light-color: #FFFFFF;
             padding-top: 5vh;
             padding-left: 5vw;
             padding-right: 5vw;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 19px;
-            line-height: 26px;
-            letter-spacing: 0.2px;
             color: $light-color;
         }
 
@@ -266,6 +261,56 @@ $light-color: #FFFFFF;
             }
         }
     }
+
+    // Блок Location часть 2
+    .location-2 {
+        padding: 54px 30px;
+        background: #FFF8F5;
+        
+        &__image{
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        &__story {
+            width: 100%;
+    
+            &_title {
+                font-size: 37px;
+                margin-top: 30px;
+                text-align: center;
+            }
+        
+            &_text {
+                padding-top: 15px;
+            }
+        
+            &_year {
+                margin-top: 25px;
+                margin-bottom: 20px;
+        
+                &_year-2018-title {
+                    font-size: 37px;
+                    text-align: center; 
+                }
+        
+                &_year-2018-text {
+                    padding-top: 20px;
+                }
+        
+                &_year-2022-title {
+                    padding-top: 20px;
+                    font-size: 37px;
+                    text-align: center;
+                }
+        
+                &_year-2022-text {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    
     //Блок 4 special dishes
     .dish{
         display:grid;
