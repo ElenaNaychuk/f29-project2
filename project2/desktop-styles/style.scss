@@ -529,6 +529,10 @@
                 margin-right: 10rem;
                 display: grid;
                 grid-column: 1/2;
+                height: fit-content;
+            }
+            .dish1__left{
+                width: fit-content;
             }
             .dish1-left_button {
                 width: 255px;
