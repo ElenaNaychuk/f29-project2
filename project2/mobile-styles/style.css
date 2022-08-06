@@ -146,6 +146,7 @@
     line-height: 1rem;
   }
   .location-2 {
+    display: block;
     padding: 54px 30px;
     background: #FFF8F5;
   }
