@@ -188,46 +188,6 @@
     padding-top: 20px;
     padding: 0;
   }
-  .dish {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-  .dish .dish1 {
-    display: grid;
-    grid-template-columns: 2/3;
-    max-width: 1360px;
-    background-color: white;
-    margin: 0 auto;
-    padding: 40px;
-  }
-  .dish-left {
-    grid-row: 1/6;
-    margin-right: 10rem;
-  }
-  .dish-right {
-    display: grid;
-    margin-top: 4rem;
-    grid-template-columns: 1fr;
-    width: 100%;
-    align-items: start;
-  }
-  .dish-right-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .dish-right-1-border {
-    border-bottom: 1px solid #AAAAAA;
-    width: 1fr;
-  }
-  .dish-right-1_1 {
-    grid-template-columns: 1fr auto;
-  }
-  .dish-right-1_2 {
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 2fr 5px;
-  }
   .dishes {
     padding-top: 10vh;
     padding-bottom: 5vh;
@@ -271,7 +231,6 @@
     font-size: 60px;
     letter-spacing: 0.2px;
     color: #292E36;
-    padding-top: 2vh;
   }
   .cards__card-burger_pre-title {
     grid-column: 1/2;
@@ -326,7 +285,6 @@
     font-size: 60px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
-    padding-top: 2vh;
   }
   .cards__card-pizza_pre-title {
     grid-column: 1/2;
