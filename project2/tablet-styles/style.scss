@@ -7,7 +7,6 @@ $light-color: #FFFFFF;
 @media (min-width: 768px) and (max-width: 1023.98px) {
 
     // Блок 1, Header
-    
     .header {
         height: auto;
         background: $primary-color;
@@ -43,7 +42,7 @@ $light-color: #FFFFFF;
                 background-color: transparent;
                 color: $accent-color;
             }
-        
+
             &_btn-orange:focus {
                 border: 2px solid $accent-color;
                 background-color: $accent-color;
@@ -149,7 +148,6 @@ $light-color: #FFFFFF;
     }
 
     // Блок 2, Location
-
     .location {
 
         background-color: #FFF8F5;
@@ -188,7 +186,7 @@ $light-color: #FFFFFF;
         padding: 64px 35px;
         background: #FFF8F5;
 
-        &__image{
+        &__image {
             width: 50%;
             object-fit: cover;
         }
@@ -241,33 +239,7 @@ $light-color: #FFFFFF;
         }
     }
 
-    //Блок 4 special dishes
-    .dish{
-        display:grid;
-        grid-template-columns: 1fr 2fr;
-        max-width: 1360px;
-        background-color: white;
-        margin: 0 auto;
-    }
-    .dish-left{
-        grid-row:1/6;
-        margin-right: 10rem;
-    }
-    .dish-right{
-        display: grid;
-        margin-top: 4rem;
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .dish1-right-1{
-        display: grid;
-        grid-template-columns: auto 1fr;
-    }
-    .dish-right-1-border {
-        border-bottom: 1px solid #AAAAAA;
-        width: 1fr;
-    }
-    // Блок 5 Dishes 
+    // Блок 4 Dishes 
 
     .dishes {
         padding-top: 10vh;
@@ -321,7 +293,7 @@ $light-color: #FFFFFF;
 
             &_pre-title {
                 grid-column: 1/2;
-                grid-row: 3/4;               
+                grid-row: 3/4;
                 border-top: 1px solid $primary-color;
                 border-bottom: 1px solid $primary-color;
                 margin-right: auto;
@@ -355,7 +327,7 @@ $light-color: #FFFFFF;
         &__card-pizza {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr ;
+            grid-template-rows: 2fr 2fr 25px 1fr 1fr 1fr;
             background: url("../assets/images/pizza-background-gray.png");
             height: 390px;
             width: 100%;
@@ -426,7 +398,7 @@ $light-color: #FFFFFF;
             grid-template-columns: 1fr;
             grid-template-rows: auto 63px 90px;
             width: 48%;
-            
+
             &_image {
                 grid-row: 1/2;
                 object-fit: contain;
@@ -437,7 +409,7 @@ $light-color: #FFFFFF;
             &_title {
                 grid-column: 1/2;
                 grid-row: 2/3;
-                border-bottom: 1px solid  #DCDCDC;
+                border-bottom: 1px solid #DCDCDC;
                 padding-top: 9px;
                 align-self: center;
             }
@@ -466,7 +438,6 @@ $light-color: #FFFFFF;
     }
 
     // Блок 6, offer
-
     .offer {
 
         &__content {
@@ -494,7 +465,6 @@ $light-color: #FFFFFF;
     }
 
     // Блок 6, news
-
     .news {
 
         &__introduction {
@@ -524,7 +494,6 @@ $light-color: #FFFFFF;
     }
 
     // Блок 7, FORM
-
     .form {
 
         &__wrapper {
@@ -546,7 +515,6 @@ $light-color: #FFFFFF;
     }
 
     // Блок footer
-
     .footer {
 
         &__social {

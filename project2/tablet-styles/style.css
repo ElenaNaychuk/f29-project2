@@ -195,31 +195,6 @@
     padding-left: 3vw;
     padding-top: 20px;
   }
-  .dish {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    max-width: 1360px;
-    background-color: white;
-    margin: 0 auto;
-  }
-  .dish-left {
-    grid-row: 1/6;
-    margin-right: 10rem;
-  }
-  .dish-right {
-    display: grid;
-    margin-top: 4rem;
-    grid-template-columns: 1fr;
-    width: 100%;
-  }
-  .dish1-right-1 {
-    display: grid;
-    grid-template-columns: auto 1fr;
-  }
-  .dish-right-1-border {
-    border-bottom: 1px solid #AAAAAA;
-    width: 1fr;
-  }
   .dishes {
     padding-top: 10vh;
     padding-bottom: 5vh;
